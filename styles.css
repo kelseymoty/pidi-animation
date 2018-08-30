@@ -17,14 +17,14 @@ img#house {
     position: absolute; 
     top: 0;
     left: 0; 
-    z-index: 2;
-    -webkit-animation-name: pulseSmall, zoomsIn, fades;
-    -webkit-animation-duration: .75s, 2.5s, 2.5s;
-    -webkit-animation-delay: 1.25s, 5s, 5s;
+    z-index: 3;
+    -webkit-animation-name: pulseSmall, zoomIn, fadeOut, zoomOut, fadeIn;
+    -webkit-animation-duration: .75s, 2.5s, 2.5s, 1s, 2s;
+    -webkit-animation-delay: 1.25s, 5s, 5s, 10s, 21s;
     -webkit-animation-fill-mode: forwards;
-    animation-name:pulseSmall, zoomsIn, fades;
-    animation-duration: .75s, 2.5s, 2.5s;
-    animation-delay: 1.25s, 5s, 5s;
+    animation-name:pulseSmall, zoomIn, fadeOut, zoomOut, fadeIn;
+    animation-duration: .75s, 2.5s, 2.5s, 1s, 2s;
+    animation-delay: 1.25s, 5s, 5s, 10s, 21s;
     animation-fill-mode: forwards;
 }
 
@@ -36,84 +36,40 @@ img#house_inside {
     z-index: 1;
 }
 
+img#yellow_pizza {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    z-index: 2;
+}
 
-@keyframes zoomsIn {
+
+/* Library of animations */
+@keyframes zoomIn {
     0% {}
     100% {transform: scale(2)}
 }
 
-@keyframes fades {
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
     0% {opacity: 1}
     100% {opacity: 0}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 @keyframes pulseSmall {
     0% {}
     50% {transform: scale(1.05)} 
     100% {transform: scale(1)} 
-}
-
-
-
-
-
-.container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-
-test {
-    width: 100px;
-    background: red;
-    position: relative;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -webkit-animation-fill-mode: backwards;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
-
-}
-
-
-div.green1 {
-    width: 100px;
-    -webkit-animation: appear 5s;
-    animation: appear 5s;
-}
-
-img {
-    width: 100%;
-}
-
-div#house {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-}
-
-
-
-
-div.sarah {
-    position: absolute;
-    -webkit-animation: sarahMoves 5s;
-    -webkit-animation-fill-mode: forwards;
-    animation: sarahMoves 5s;
-    animation-fill-mode: forwards;   
-}
-
-div.book {
-    display: none; 
-}
-
-@keyframes sarahMoves {
-    0% {left: 35%; top: 35%; width: 600px;}
-    60% {left: 35%; top: 35%; width: 600px;}
-    100% {left: 75%; top: 2%; width: 400px;}
 }
 
 

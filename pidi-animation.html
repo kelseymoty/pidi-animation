@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
+    <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- introduction -->
+    <div class="container">
+        <!-- <audio autoplay>
+            <source src="Audio/animal_task_intro.m4a" type="audio/mp4">
+        </audio> -->
+        <iframe src="Audio/animal_task_intro.m4a" allow="autoplay" style="display:none" id="iframeAudio">
+        </iframe>
+        <div class="sarah">
+            <img id="sarah" src="../Images/Sarah.png" />
+        </div>
+        <!-- <div class="green1">
+            <img class="green1" src="../Images/Boy_Green1.png" />
+        </div> -->
+
+
+        <div class="book">
+            <img id="book" src="../Images/book.png" />
+        </div>
+    </div>
+
+
+</body>
+
+</html>

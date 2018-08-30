@@ -1,8 +1,66 @@
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+div#house {
+    display: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+}
+
+img#house {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    z-index: 2;
+    -webkit-animation-name: pulseSmall, zoomsIn, fades;
+    -webkit-animation-duration: .75s, 2.5s, 2.5s;
+    -webkit-animation-delay: 1.25s, 5s, 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name:pulseSmall, zoomsIn, fades;
+    animation-duration: .75s, 2.5s, 2.5s;
+    animation-delay: 1.25s, 5s, 5s;
+    animation-fill-mode: forwards;
+}
+
+img#house_inside {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+@keyframes zoomsIn {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes fades {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+
+
+
 
 .container {
     position: relative;
-    width: 90vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 test {
@@ -30,6 +88,15 @@ div.green1 {
 img {
     width: 100%;
 }
+
+div#house {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
 
 div.sarah {
     position: absolute;

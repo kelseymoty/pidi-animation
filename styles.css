@@ -18,13 +18,9 @@ img#house {
     top: 0;
     left: 0; 
     z-index: 3;
-    -webkit-animation-name: pulseSmall, zoomIn, fadeOut, zoomOut, fadeIn;
-    -webkit-animation-duration: .75s, 2.5s, 2.5s, 1s, 2s;
-    -webkit-animation-delay: 1.25s, 5s, 5s, 10s, 21s;
-    -webkit-animation-fill-mode: forwards;
-    animation-name:pulseSmall, zoomIn, fadeOut, zoomOut, fadeIn;
-    animation-duration: .75s, 2.5s, 2.5s, 1s, 2s;
-    animation-delay: 1.25s, 5s, 5s, 10s, 21s;
+    animation-name: pulseSmall, zoomIn, fadeOut, zoomOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: .75s, 2.5s, 2.5s, 1s, 1s, .25s, 2s, .25s;
+    animation-delay: 1.25s, 5s, 5s, 10s, 21s, 25s, 31s, 32s;
     animation-fill-mode: forwards;
 }
 
@@ -34,6 +30,10 @@ img#house_inside {
     top: 0;
     left: 0;
     z-index: 1;
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 22s;
+    animation-fill-mode: forwards;
 }
 
 img#yellow_pizza {
@@ -42,8 +42,50 @@ img#yellow_pizza {
     top: 40%;
     left: 25%;
     z-index: 2;
+    animation-name: fadeOut, pulseSmall;
+    animation-duration: 1s, 1s;
+    animation-delay: 22s, 11s;
+    animation-fill-mode: forwards;
 }
 
+img#group_pizza {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 1s, 1s, 1s, .5s;
+    animation-delay: 21s, 24s, 31s, 32s;
+    animation-fill-mode: forwards;
+}
+
+img#group_pizza_y {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    animation-name: fadeIn, selectRight, fadeOut;
+    animation-duration: 2s, 1.5s, 0s;
+    animation-delay: 21s, 25s, 31s;
+    animation-fill-mode: forwards;
+}
+
+img#group_pizza_g {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    opacity: 0;
+    animation-name: fadeIn, selectLeft;
+    animation-duration: 2s, 1.5s;
+    animation-delay: 31s, 32.5s;
+    animation-fill-mode: forwards;
+}
 
 /* Library of animations */
 @keyframes zoomIn {
@@ -72,6 +114,15 @@ img#yellow_pizza {
     100% {transform: scale(1)} 
 }
 
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -700px; top: -200px; transform: scale(1.5)}
+}
 
 
 

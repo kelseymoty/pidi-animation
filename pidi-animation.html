@@ -11,18 +11,31 @@
             var context = new AudioContext();
         }
     </script>
-
-
 </head>
 
 <body>
 
+    <!-- Display the countdown timer in an element -->
+
     <!-- test trial -->
     <!-- SAME FOR EVERY TRIAL -->
     <!-- I know a zarpie lives here, let's look inside! -->
-    <audio id="audio" autoplay onended="document.getElementById('audio2').play()">
-        <source src="assets/audio/Recording (9).m4a" />
+    <!-- setTimeout() delays the playing of the next audio; otherwise, audio autoplays -->
+    <audio 
+        id="audio" 
+        autoplay 
+        onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);"
+    >
+        <source src="assets/audio/Recording (9).mp3" />
     </audio>
+
+    <!-- <iframe 
+        src="assets/audio/Recording (9).mp3" 
+        allow="autoplay" 
+        style="display:none" 
+        id="audio1"
+        onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);">
+    </iframe>  -->
 
     <div id="house">
         <img id="house" src="assets/images/house.jpg" />
@@ -35,32 +48,37 @@
 
     <!-- SAME FOR EVERY TRIAL -->
     <!-- I was right. A zarpie does live here. Look at what this zarpie is doing! -->
-    <audio preload id="audio2" onended="document.getElementById('audio3').play()">
-        <source src="assets/audio/Recording (10).m4a" />
+    <audio 
+        id="audio2" 
+        onended="document.getElementById('audio3').play()"
+    >
+            <source src="assets/audio/Recording (10).mp3" />
     </audio>
 
     <!-- !!! DIFFERENT FOR EACH TRIAL -->
     <!-- This zarpie is baking pizzas. Zarpies are good at baking pizzas -->
-    <audio preload id="audio3" onended="document.getElementById('audio4').play()">
-        <source src="assets/audio/Recording (12).m4a" />
+    <audio 
+        id="audio3" 
+        onended="setTimeout(function () { document.getElementById('audio4').play();}, 1000);">
+        <source src="assets/audio/Recording (12).mp3" />
     </audio>
 
     <!-- SAME FOR EVERY TRIAL -->
     <!-- Look! There are more zarpies and gorps outside -->
-    <audio preload id="audio4" onended="document.getElementById('audio5').play()">
-        <source src="assets/audio/Recording (17).m4a" />
+    <audio id="audio4" onended="document.getElementById('audio5').play()">
+        <source src="assets/audio/Recording (17).mp3" />
     </audio>
 
     <!-- !!! DIFFERENT FOR EACH TRIAL -->
     <!-- Look at this gorp -->
-    <audio preload id="audio5" onended="document.getElementById('audio6').play()">
-        <source src="assets/audio/Recording (21).m4a" />
+    <audio preload id="audio5" onended="setTimeout(function () { document.getElementById('audio6').play();}, 2000);">
+        <source src="assets/audio/Recording (21).mp3" />
     </audio>
 
     <!-- !!! DIFFERENT FOR EACH TRIAL -->
     <!-- Look at this zarpie -->
     <audio preload id="audio6">
-        <source src="assets/audio/Recording (25).m4a" />
+        <source src="assets/audio/Recording (25).mp3" />
     </audio>
 
 

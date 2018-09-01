@@ -19,8 +19,8 @@ img#house {
     left: 0; 
     z-index: 3;
     animation-name: pulseSmall, zoomIn, fadeOut, zoomOut, fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: .75s, 2.5s, 2.5s, 1s, 1s, .25s, 2s, .25s;
-    animation-delay: 1.25s, 5s, 5s, 10s, 21s, 25s, 31s, 32s;
+    animation-duration: .75s, 2.5s, 2.5s, 1s, 1s, .25s, 2s, .5s;
+    animation-delay: .5s, 4.5s, 5s, 10s, 17s, 20.5s, 27s, 28.5s;
     animation-fill-mode: forwards;
 }
 
@@ -32,7 +32,7 @@ img#house_inside {
     z-index: 1;
     animation-name: fadeOut;
     animation-duration: 1s;
-    animation-delay: 22s;
+    animation-delay: 18s;
     animation-fill-mode: forwards;
 }
 
@@ -42,10 +42,11 @@ img#yellow_pizza {
     top: 40%;
     left: 25%;
     z-index: 2;
-    animation-name: fadeOut, pulseSmall;
-    animation-duration: 1s, 1s;
-    animation-delay: 22s, 11s;
+    animation-name: fadeOut, pulseSmall, wiggle, wiggle;
+    animation-duration: 1s, 1s, 1s, 1s;
+    animation-delay: 18s, 7s, 9.5s, 11.5s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 img#group_pizza {
@@ -55,9 +56,9 @@ img#group_pizza {
     left: 0;
     z-index: 4;
     opacity: 0;
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 1s, 1s, 1s, .5s;
-    animation-delay: 21s, 24s, 31s, 32s;
+    animation-name: fadeIn, pulseSmall, fadeOut, fadeIn, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, .5s;
+    animation-delay: 17s, 19s, 20.5s, 27s, 28.5s;
     animation-fill-mode: forwards;
 }
 
@@ -69,8 +70,8 @@ img#group_pizza_y {
     z-index: 5;
     opacity: 0;
     animation-name: fadeIn, selectRight, fadeOut;
-    animation-duration: 2s, 1.5s, 0s;
-    animation-delay: 21s, 25s, 31s;
+    animation-duration: 1s, 1.5s, 0s;
+    animation-delay: 20s, 21.5s, 27s;
     animation-fill-mode: forwards;
 }
 
@@ -82,8 +83,8 @@ img#group_pizza_g {
     z-index: 6;
     opacity: 0;
     animation-name: fadeIn, selectLeft;
-    animation-duration: 2s, 1.5s;
-    animation-delay: 31s, 32.5s;
+    animation-duration: .5s, 1.5s;
+    animation-delay: 27s, 29s;
     animation-fill-mode: forwards;
 }
 
@@ -123,6 +124,16 @@ img#group_pizza_g {
     0% {}
     100% {left: -700px; top: -200px; transform: scale(1.5)}
 }
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
 
 
 

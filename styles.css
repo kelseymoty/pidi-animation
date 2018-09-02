@@ -1,16 +1,95 @@
+/* General CSS */
 body {
     overflow: hidden; 
     margin: 0px;
 }
 
-div#house {
-    display: relative;
+div#images {
+    position: relative;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0; 
 }
 
+/* introduction.html-specific CSS  */
+img#sarah {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    top: 25%;
+    animation-name: sarahMoves, fadeOut;
+    animation-duration: 3s, .25s;
+    animation-delay: 1s, 26.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img#neighborhood {
+    height: 100vh;
+    width: 100vw; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-name: fadeIn, fadeOut, fadeIn, zoomIn, fadeOut;
+    animation-duration: 1s, .25s, .5s, 4s, 1s;
+    animation-delay: 2.5s, 26.5s, 38s, 38s, 40s;
+    animation-fill-mode: forwards; 
+    z-index: 3;   
+}
+
+img#group_yellow {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    opacity: 0;
+    z-index: 4;
+    animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
+    animation-delay: 7s, 13.5s, 17s, 19s, 21s, 26.5s;
+    animation-fill-mode: forwards; 
+}
+
+img#group_green {
+    width: 35%;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    opacity: 0;
+    z-index: 4;
+    animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
+    animation-delay: 7s, 14.5s, 18s, 23s, 24.5s, 26.5s;
+    animation-fill-mode: forwards; 
+}
+
+img.attn {
+    height: 50%;
+    position: absolute;
+    top: 25%; 
+    opacity: 0;   
+}
+
+img#attn_yellow {
+    left: 20%;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
+    animation-duration: .25s, 1s, 1s, .5s;
+    animation-delay: 27s, 27.5s, 31.5s, 37.5s;
+    animation-fill-mode: forwards;    
+}
+
+img#attn_green {
+    right: 20%;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
+    animation-duration: .25s, 1s, 1s, .5s;
+    animation-delay: 27s, 27.5s, 36s, 37.5s;
+    animation-fill-mode: forwards;  
+}
+
+/* test_trials.html-specific CSS  */
 img#house {
     width: 100%;
     height: 100%;
@@ -18,7 +97,7 @@ img#house {
     top: 0;
     left: 0; 
     z-index: 3;
-    animation-name: pulseSmall, zoomIn, fadeOut, zoomOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-name: pulseSmall, zoomIn2x, fadeOut, zoomOut, fadeIn, fadeOut, fadeIn, fadeOut;
     animation-duration: .75s, 2.5s, 2.5s, 1s, 1s, .25s, 2s, .5s;
     animation-delay: .5s, 4.5s, 5s, 10s, 17s, 20.5s, 27s, 28.5s;
     animation-fill-mode: forwards;
@@ -89,9 +168,14 @@ img#group_pizza_g {
 }
 
 /* Library of animations */
-@keyframes zoomIn {
+@keyframes zoomIn2x {
     0% {}
     100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
 }
 
 @keyframes zoomOut {
@@ -134,7 +218,13 @@ img#group_pizza_g {
   100% {transform: rotate(0deg);}
 }
 
+@keyframes sarahMoves {
+    100% {left: 73%; top: 3%; width: 25%;}    
+}
 
+@keyframes moveRight {
+    100% {left: 25%}
+}
 
 
 

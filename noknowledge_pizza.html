@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
+    <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+    </script>
+</head>
+
+<body>
+<!-- This code is set up to run test trial for pizza property/no-knowledge speaker -->
+
+    <!-- IMAGES -->
+    <div id="images">
+        <!-- SAME FOR ALL TEST TRIALS -->
+        <img id="house" src="assets/images/house.jpg" /> 
+        <img id="house_inside" src="assets/images/inside.jpg" />
+        <!-- DIFFERENT FOR EACH TEST TRIAL -->
+        <img id="yellow_pizza" src="assets/images/activities/yellow baking.png" /> <!-- individial inside house -->
+        <img id="group_pizza" src="assets/images/group_pizza.png" /> <!-- group pic outside of house -->
+        <img id="group_pizza_g" src="assets/images/group_pizza_green.png" /> <!-- green individual selected from group -->
+        <img id="group_pizza_y" src="assets/images/group_pizza_yellow.png" /> <!-- yellow individual selected from group -->
+    </div>
+
+    <!-- AUDIO -->
+        <!-- setTimeout(function () { }, 1000); delays the playing of the next audio; 
+            number is in milliseconds. e.g., 1000 = 1 second;
+            otherwise, audio starts playing immediately after the end of another -->
+
+        <!-- onended="document.getElementById('').play()" finds the next audio to play
+            after current audio ends and plays it -->
+
+        <!-- AUDIO 1: I know a zarpie lives here, let's look inside! -->
+        <!-- SAME FOR ALL TEST TRIALS -->
+            <audio 
+                id="audio" 
+                autoplay 
+                onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);"
+            >
+                <source src="assets/audio/Recording (34).mp3" />
+            </audio>
+
+            <!-- I had some weird issues with chrome (because of the autoplay issues) that 
+            could oddly be fixed if I opened the html in the web browser with this code uncommented
+            and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
+            They've discussed changing this policy back, but either way, using the audio tag above
+            or the iframe solution should get the audio to autoplay. You only need to use the iframe
+            solution for the first audio. All other audio afterward will successfully autoplay  -->
+            <!-- <iframe 
+                src="assets/audio/Recording (9).mp3" 
+                allow="autoplay" 
+                style="display:none" 
+                id="audio1"
+                onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);">
+            </iframe>  -->
+
+        <!-- AUDIO 2: I was right. A zarpie does live here. Look at what this zarpie is doing! -->
+        <!-- SAME FOR ALL TEST TRIALS -->        
+            <audio 
+                id="audio2" 
+                onended="document.getElementById('audio3').play()"
+            >
+                    <source src="assets/audio/Recording (40).mp3" />
+            </audio>
+
+        <!-- AUDIO 3: This zarpie is baking pizzas. Zarpies are good at baking pizzas -->
+        <!-- !!! DIFFERENT FOR EACH TRIAL-->        
+            <audio 
+                id="audio3" 
+                onended="setTimeout(function () { document.getElementById('audio4').play();}, 1000);">
+                <source src="assets/audio/Recording (12).mp3" />
+            </audio>
+
+        <!-- AUDIO 4: Look! There are more zarpies and gorps outside -->
+        <!-- SAME FOR ALL TEST TRIALS -->  
+            <audio id="audio4" onended="document.getElementById('audio5').play()">
+                <source src="assets/audio/Recording (17).mp3" />
+            </audio>
+
+        <!-- AUDIO 5: Look at this zarpie. Is this zarpie good at ...  -->
+        <!-- !!! DIFFERENT FOR EACH TRIAL-->       
+            <audio preload id="audio5" onended="setTimeout(function () { document.getElementById('audio6').play();}, 2000);">
+                <source src="assets/audio/Recording (25).mp3" />
+            </audio>
+
+        <!-- AUDIO 6: Look at this gorp. Is this gorp good at ...  -->
+        <!-- !!! DIFFERENT FOR EACH TRIAL-->  
+            <audio preload id="audio6">
+                <source src="assets/audio/Recording (21).mp3" />
+            </audio>
+</body>
+</html>

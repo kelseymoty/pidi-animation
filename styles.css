@@ -89,6 +89,83 @@ img#attn_green {
     animation-fill-mode: forwards;  
 }
 
+/* introduction_noknowledge.html-specific CSS  */
+img#sarah1 {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    top: 25%;
+    animation-name: sarahMoves, fadeOut;
+    animation-duration: 3s, .25s;
+    animation-delay: 1s, 29s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img#neighborhood1 {
+    height: 100vh;
+    width: 100vw; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-name: fadeIn, fadeOut, fadeIn, zoomIn, fadeOut;
+    animation-duration: 1s, .25s, .5s, 4s, 1s;
+    animation-delay: 2.5s, 29s, 40.5s, 40.5s, 42s;
+    animation-fill-mode: forwards; 
+    z-index: 3;   
+}
+
+img#group_yellow1 {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    opacity: 0;
+    z-index: 4;
+    animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
+    animation-delay: 12s, 15s, 18.75s, 22s, 23.5s, 29s;
+    animation-fill-mode: forwards; 
+}
+
+img#group_green1 {
+    width: 35%;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    opacity: 0;
+    z-index: 4;
+    animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
+    animation-delay: 12s, 16s, 20s, 25.5s, 27s, 29s;
+    animation-fill-mode: forwards; 
+}
+
+img.attn1 {
+    height: 50%;
+    position: absolute;
+    top: 25%; 
+    opacity: 0;   
+}
+
+img#attn_yellow1 {
+    left: 20%;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
+    animation-duration: .25s, 1s, 1s, .5s;
+    animation-delay: 29.25s, 29.5s, 34.5s, 40.5s;
+    animation-fill-mode: forwards;    
+}
+
+img#attn_green1 {
+    right: 20%;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
+    animation-duration: .25s, 1s, 1s, .5s;
+    animation-delay: 29.25s, 29.5s, 39s, 40.5s;
+    animation-fill-mode: forwards;  
+}
+
 /* test_trials.html-specific CSS  */
 img#house {
     width: 100%;
@@ -99,7 +176,7 @@ img#house {
     z-index: 3;
     animation-name: pulseSmall, zoomIn2x, fadeOut, zoomOut, fadeIn, fadeOut, fadeIn, fadeOut;
     animation-duration: .75s, 2.5s, 2.5s, 1s, 1s, .25s, 2s, .5s;
-    animation-delay: .5s, 4.5s, 5s, 10s, 17s, 20.5s, 27s, 28.5s;
+    animation-delay: .5s, 4.5s, 5s, 10s, 17s, 20.5s, 27s, 29s;
     animation-fill-mode: forwards;
 }
 
@@ -121,9 +198,9 @@ img#yellow_pizza {
     top: 40%;
     left: 25%;
     z-index: 2;
-    animation-name: fadeOut, pulseSmall, wiggle, wiggle;
-    animation-duration: 1s, 1s, 1s, 1s;
-    animation-delay: 18s, 7s, 9.5s, 11.5s;
+    animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
+    animation-duration: 1s, 1s, 1s, 1s, 1s;
+    animation-delay: 18s, 7s, 9.5s, 11.5s, 13.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -137,7 +214,7 @@ img#group_pizza {
     opacity: 0;
     animation-name: fadeIn, pulseSmall, fadeOut, fadeIn, fadeOut;
     animation-duration: 1s, 1s, 1s, 1s, .5s;
-    animation-delay: 17s, 19s, 20.5s, 27s, 28.5s;
+    animation-delay: 17s, 19s, 20.5s, 27s, 29s;
     animation-fill-mode: forwards;
 }
 
@@ -162,8 +239,8 @@ img#group_pizza_g {
     z-index: 6;
     opacity: 0;
     animation-name: fadeIn, selectLeft;
-    animation-duration: .5s, 1.5s;
-    animation-delay: 27s, 29s;
+    animation-duration: 0s, 1.5s;
+    animation-delay: 29s, 29.5s;
     animation-fill-mode: forwards;
 }
 
@@ -206,7 +283,7 @@ img#group_pizza_g {
 
 @keyframes selectLeft {
     0% {}
-    100% {left: -700px; top: -200px; transform: scale(1.5)}
+    100% {left: -900px; top: -200px; transform: scale(1.5)}
 }
 
 @keyframes wiggle {

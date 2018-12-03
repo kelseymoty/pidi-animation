@@ -40,7 +40,7 @@
             autoplay 
             onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
         >
-            <source src="assets/audio/Recording (3).mp3" />
+            <source src="assets/audio/intro_k.mp3" />
         </audio>
 
         <!-- I had some weird issues with chrome (because of the autoplay issues) that 
@@ -49,8 +49,8 @@
         They've discussed changing this policy back, but either way, using the audio tag above
         or the iframe solution should get the audio to autoplay. You only need to use the iframe
         solution for the first audio. All other audio afterward will successfully autoplay  -->
-        <!-- <iframe 
-            src="assets/audio/Recording (3).mp2" 
+        <!--<iframe 
+            src="assets/audio/intro_k.mp3" 
             allow="autoplay" 
             style="display:none" 
             id="audio1">
@@ -62,14 +62,14 @@
             id="audio2" 
             onended="document.getElementById('audio3').play()"
         >
-                <source src="assets/audio/Recording (4).mp3" />
+                <source src="assets/audio/attention1.mp3" />
         </audio>
 
     <!-- AUDIO 3: Do you know which one is a zarpie -->    
         <audio 
             id="audio3" 
             onended="setTimeout(function () { document.getElementById('audio4').play();}, 1000);">
-            <source src="assets/audio/Recording (5).mp3" />
+            <source src="assets/audio/attention2.mp3" />
         </audio>
 
     <!-- AUDIO 4: This one is a zarpie  -->
@@ -79,7 +79,7 @@
 
     <!-- AUDIO 5: Do you know which one is a gorp -->   
         <audio id="audio5" onended="setTimeout(function () { document.getElementById('audio6').play();}, 1000);">
-            <source src="assets/audio/Recording (6).mp3" />
+            <source src="assets/audio/attention3.mp3" />
         </audio>
 
     <!-- AUDIO 6: This one is a gorp -->
@@ -89,7 +89,7 @@
     
     <!-- AUDIO 7: let's go for a walk around  -->
         <audio preload id="audio7">
-            <source src="assets/audio/Recording (11).mp3" />
+            <source src="assets/audio/attention4_k.mp3" />
         </audio>
 
 </body>

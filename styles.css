@@ -193,10 +193,49 @@ img#house_inside {
 }
 
 img#yellow_pizza {
-    width: 50%;
+    width: 15%;
+    position: absolute;
+    top: 25%;
+    left: 42%;
+    z-index: 2;
+    animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
+    animation-duration: 1s, 1s, 1s, 1s, 1s;
+    animation-delay: 18s, 7s, 9.5s, 11.5s, 13.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#yellow_paint {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    z-index: 2;
+    animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
+    animation-duration: 1s, 1s, 1s, 1s, 1s;
+    animation-delay: 18s, 7s, 9.5s, 11.5s, 13.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#yellow_photo {
+    width: 17%;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    z-index: 2;
+    animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
+    animation-duration: 1s, 1s, 1s, 1s, 1s;
+    animation-delay: 18s, 7s, 9.5s, 11.5s, 13.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+img#yellow_piano {
+    width: 30%;
     position: absolute;
     top: 40%;
-    left: 25%;
+    left: 40%;
     z-index: 2;
     animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
     animation-duration: 1s, 1s, 1s, 1s, 1s;
@@ -283,7 +322,7 @@ img#group_pizza_g {
 
 @keyframes selectLeft {
     0% {}
-    100% {left: -900px; top: -200px; transform: scale(1.5)}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
 }
 
 @keyframes wiggle {

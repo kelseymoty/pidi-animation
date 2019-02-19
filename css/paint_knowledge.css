@@ -8,7 +8,7 @@ img#outside {
     z-index: 3;
     animation-name: pulseSmall, zoomIn2x, fadeOut, zoomOut, fadeIn, fadeOut, fadeIn, fadeOut;
     animation-duration: .75s, 2.5s, 2.5s, 1s, 1s, .25s, 2s, .5s;
-    animation-delay: .5s, 4.5s, 5s, 10s, 17s, 20.5s, 27s, 29s;
+    animation-delay: .5s, 4.5s, 5s, 10s, 17s, 20.5s, 27s, 28.25s;
     animation-fill-mode: forwards;
 }
 
@@ -25,10 +25,10 @@ img#inside {
 }
 
 img#individual {
-    width: 50%;
+    width: 40%;
     position: absolute;
-    top: 40%;
-    left: 25%;
+    top: 25%;
+    left: 30%;
     z-index: 2;
     animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
     animation-duration: 1s, 1s, 1s, 1s, 1s;
@@ -46,7 +46,7 @@ img#group {
     opacity: 0;
     animation-name: fadeIn, pulseSmall, fadeOut, fadeIn, fadeOut;
     animation-duration: 1s, 1s, 1s, 1s, .5s;
-    animation-delay: 17s, 18.5s, 20.5s, 27s, 29s;
+    animation-delay: 17s, 18.5s, 20.5s, 27s, 28s;
     animation-fill-mode: forwards;
 }
 
@@ -72,7 +72,7 @@ img#green {
     opacity: 0;
     animation-name: fadeIn, selectLeft;
     animation-duration: 0s, 1.5s;
-    animation-delay: 29s, 29.5s;
+    animation-delay: 28s, 29.5s;
     animation-fill-mode: forwards;
 }
 
@@ -133,12 +133,12 @@ img#no {
 
 @keyframes selectRight {
     0% {}
-    100% {left: 700px; top: -200px; transform: scale(1.5)}
+    100% {left: 150px; top: -200px; transform: scale(1.5)}
 }
 
 @keyframes selectLeft {
     0% {}
-    100% {left: -850px; top: -200px; transform: scale(1.5)}
+    100% {left: -350px; top: -200px; transform: scale(1.5)}
 }
 
 @keyframes wiggle {

@@ -166,47 +166,6 @@ img#attn_green1 {
     animation-fill-mode: forwards;  
 }
 
-/* paint trial */
-img#yellow_paint {
-    width: 40%;
-    position: absolute;
-    top: 20%;
-    left: 42%;
-    z-index: 2;
-    animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
-    animation-duration: 1s, 1s, 1s, 1s, 1s;
-    animation-delay: 18s, 7s, 9.5s, 11.5s, 13.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
-
-/* photo trial */
-img#yellow_photo {
-    width: 17%;
-    position: absolute;
-    top: 20%;
-    left: 43%;
-    z-index: 2;
-    animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
-    animation-duration: 1s, 1s, 1s, 1s, 1s;
-    animation-delay: 18s, 7s, 9.5s, 11.5s, 13.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
-
-/* piano trial */
-img#yellow_piano {
-    width: 30%;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    z-index: 2;
-    animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
-    animation-duration: 1s, 1s, 1s, 1s, 1s;
-    animation-delay: 18s, 7s, 9.5s, 11.5s, 13.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
 
 /* Library of animations */
 @keyframes zoomIn2x {
@@ -266,6 +225,5 @@ img#yellow_piano {
 @keyframes moveRight {
     100% {left: 25%}
 }
-
 
 

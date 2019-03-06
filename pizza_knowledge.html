@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/piano_noknowledge.css">
+    <link rel="stylesheet" href="css/pizza_knowledge.css">
 
     <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
     <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
@@ -15,20 +15,20 @@
 </head>
 
 <body>
-<!-- This code is set up to run test trial for pizza property/no-knowledge speaker -->
+<!-- This code is set up to run test trial for pizza property/knowledge speaker -->
 
 <!-- IMAGES -->
     <div id="images">
         <!-- SAME FOR ALL TEST TRIALS ACROSS ALL CONDITIONS -->
-        <img id="outside" src="assets/images/house4.png" /> <!-- outside of house -->
+        <img id="outside" src="assets/images/house1.png" /> <!-- outside of house -->
         <img id="inside" src="assets/images/inside.jpg" /> <!-- inside of house --> 
         <img id="yes" src="assets/images/Yes.png" /> <!-- yes button -->
         <img id="no" src="assets/images/No.png" /> <!-- no button -->
         <!-- DIFFERENT FOR EACH TEST TRIAL BUT SAME ACROSS CONDITIONS -->
-        <img id="individual" src="assets/images/activities/yellow piano.png" /> <!-- individial inside house -->
-        <img id="group" src="assets/images/group_images/group2_1.png" /> <!-- group pic outside of house -->
-        <img id="green" src="assets/images/group_images/group2_green1.png" /> <!-- green individual selected from group -->
-        <img id="yellow" src="assets/images/group_images/group2_yellow1.png" /> <!-- yellow individual selected from group -->
+        <img id="individual" src="assets/images/activities/yellow baking.png" /> <!-- individial inside house -->
+        <img id="group" src="assets/images/group_images/group1_1.png" /> <!-- group pic outside of house -->
+        <img id="green" src="assets/images/group_images/group1_green1.png" /> <!-- green individual selected from group -->
+        <img id="yellow" src="assets/images/group_images/group1_yellow1.png" /> <!-- yellow individual selected from group -->
     </div>
 
 <!-- AUDIO -->
@@ -39,63 +39,64 @@
     <!-- onended="document.getElementById('').play()" finds the next audio to play
         after current audio ends and plays it -->
 
-    <!-- AUDIO 1: I wonder if a zarpie lives here, let's look inside! -->
+    <!-- AUDIO 1: I know a zarpie lives here, let's look inside! -->
     <!-- !!! DIFFERENT DEPENDING ON KNOWLEDGE / NO KNOWLEDGE CONDITION BUT SAME FOR ALL TRIALS IN CONDITION -->  
         <audio 
             id="audio" 
             autoplay 
             onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);"
         >
-            <source src="assets/audio/test1_nk.mp3" />
+            <source src="assets/audio/test1_k.mp3" />
         </audio>
 
-        <!-- I had some weird issues with chrome (because of the autoplay issues) that 
-        could oddly be fixed if I opened the html in the web browser with this code uncommented
-        and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
-        They've discussed changing this policy back, but either way, using the audio tag above
-        or the iframe solution should get the audio to autoplay. You only need to use the iframe
-        solution for the first audio. All other audio afterward will successfully autoplay  -->
-        <iframe 
-            src="assets/audio/test1_nk.mp3" 
-            allow="autoplay" 
-            style="display:none" 
-            id="audio1"
-            onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);">
-        </iframe> 
+    <!-- I had some weird issues with chrome (because of the autoplay issues) that 
+    could oddly be fixed if I opened the html in the web browser with this code uncommented
+    and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
+    They've discussed changing this policy back, but either way, using the audio tag above
+    or the iframe solution should get the audio to autoplay. You only need to use the iframe
+    solution for the first audio. All other audio afterward will successfully autoplay  -->
+    <!-- <iframe 
+        src="assets/audio/test1_k.mp3" 
+        allow="autoplay" 
+        style="display:none" 
+        id="audio1"
+        onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);">
+    </iframe>  -->
 
-    <!-- AUDIO 2: Oh! It looks like a zarpie lives here. Look at what this zarpie is doing! -->
-    <!-- !!! DIFFERENT DEPENDING ON KNOWLEDGE / NO KNOWLEDGE CONDITION BUT SAME FOR ALL TRIALS IN CONDITION -->        
+    <!-- AUDIO 2: I was right. A zarpie does live here. Look at what this zarpie is doing! -->
+    <!-- !!! DIFFERENT DEPENDING ON KNOWLEDGE / NO KNOWLEDGE CONDITION BUT SAME FOR ALL TRIALS IN CONDITION -->      
         <audio 
             id="audio2" 
             onended="document.getElementById('audio3').play()"
         >
-                <source src="assets/audio/test2_nk.mp3" />
+                <source src="assets/audio/test2_k.mp3" />
         </audio>
 
     <!-- AUDIO 3: This zarpie is baking pizzas. Zarpies are good at baking pizzas -->
-    <!-- !!! DIFFERENT FOR EACH TRIAL BUT SAME ACROSS CONDITIONS -->        
+    <!-- !!! DIFFERENT FOR EACH TRIAL BUT SAME ACROSS CONDITIONS -->    
         <audio 
             id="audio3" 
             onended="setTimeout(function () { document.getElementById('audio4').play();}, 1000);">
-            <source src="assets/audio/test4.mp3" />
+            <source src="assets/audio/test3.mp3" />
         </audio>
 
     <!-- AUDIO 4: Look! There are more zarpies and gorps outside -->
     <!-- SAME FOR ALL TEST TRIALS FOR ALL CONDITIONS -->  
-        <audio id="audio4" onended="document.getElementById('audio5').play()">
+        <audio id="audio4" onended="setTimeout(function () { document.getElementById('audio5').play();}, 500);">
             <source src="assets/audio/test7.mp3" />
         </audio>
 
     <!-- AUDIO 5: Look at this zarpie. Is this zarpie good at ...  -->
     <!-- !!! DIFFERENT FOR EACH TRIAL BUT SAME ACROSS CONDITIONS -->    
         <audio preload id="audio5" onended="setTimeout(function () { document.getElementById('audio6').play();}, 2000);">
-            <source src="assets/audio/test10.mp3" />
+            <source src="assets/audio/test8.mp3" />
         </audio>
 
     <!-- AUDIO 6: Look at this gorp. Is this gorp good at ...  -->
     <!-- !!! DIFFERENT FOR EACH TRIAL BUT SAME ACROSS CONDITIONS --> 
         <audio preload id="audio6">
-            <source src="assets/audio/test11.mp3" />
+            <source src="assets/audio/test9.mp3" />
         </audio>
+        
 </body>
 </html>

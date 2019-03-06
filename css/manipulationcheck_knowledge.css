@@ -1,0 +1,211 @@
+img.full, img.person {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+img#town {
+    z-index: 1;
+}
+
+img.person {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+img#person {
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards; 
+    z-index: 2;
+}
+
+img#person2 {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn;
+    animation-duration: 0s;
+    animation-delay: 4s,    4.2s, 4.42s, 4.52s, 4.70s;
+    animation-fill-mode: forwards; 
+    z-index: 3;
+}
+
+img#person3 {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 4.18s, 4.28s, 4.34s, 4.44s, 4.5s, 4.6s, 4.66s, 4.71s;
+    animation-fill-mode: forwards; 
+    z-index: 4;
+}
+
+img#person4 {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 4.26s, 4.36s, 4.58s, 4.68s;
+    animation-fill-mode: forwards; 
+    z-index: 5;
+}
+
+img#speech {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards; 
+    z-index: 6;   
+}
+
+img.buttona, img.buttonb {
+    opacity: 0;
+    width: 30%;
+    position: absolute; 
+    top: 50%;
+}
+
+img.responsea, img.responseb {
+    opacity: 0;
+    width: 30%;
+    position: absolute; 
+    top: 25%;
+}
+
+/* button animation for intro */
+img#button1a {
+    left: 8%;
+    z-index: 7;
+    animation-name: fadeIn, pulseSmall, wiggle, pulseSmall, pulseSmall, fadeOut50, fadeIn50, fadeOut50;
+    animation-duration: 0s, 1s, 1s, 1s, 1s, .5s, 0s, .5s;
+    animation-delay: 6.25s, 6.25s, 11s, 16.5s, 21.75s, 27s, 32s, 33s;
+    animation-fill-mode: forwards; 
+}
+
+img#button1b {
+    right: 8%;
+    z-index: 8;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut50, fadeIn50, fadeOut50, fadeIn50, pulseSmall, pulseSmall;
+    animation-duration: 0s, 1s, 1s, .5s, 0s, .5s, 0s, 1s, 1s;
+    animation-delay: 8s, 8s, 12.5s, 16s, 20s, 21s, 26s, 27.5s, 33.5s;
+    animation-fill-mode: forwards; 
+}
+
+img#correcta {
+    left: 8%;
+    z-index: 8;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 16s, 20s;
+    animation-fill-mode: forwards;   
+}
+
+img#wrongb {
+    right: 8%;
+    z-index: 8;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 21s, 26s;
+    animation-fill-mode: forwards;   
+}
+
+img#correctb {
+    right: 8%;
+    z-index: 8;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 27s, 32s;
+    animation-fill-mode: forwards;   
+}
+
+img#wronga {
+    left: 8%;
+    z-index: 8;
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 33s;
+    animation-fill-mode: forwards;   
+}
+
+img#button2a {
+    opacity: 0;   
+}
+
+img#button2b {
+    opacity: 0;  
+}
+
+/* Library of animations */
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut50 {
+    0% {opacity: 1}
+    100% {opacity: 0.5}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes fadeIn50 {
+    0% {opacity: 0.5}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes sarahMoves {
+    100% {left: 73%; top: 3%; width: 25%;}    
+}
+
+@keyframes moveRight {
+    100% {left: 25%}
+}
+
+

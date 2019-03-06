@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/manipulationcheck_knowledge.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
+    <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+    </script>
+</head>
+
+<body>
+<!-- This code is set up to run introduction for knowledgeable speaker -->
+
+<!-- IMAGES -->
+    <div id="images">
+        <img class="full" id="town" src="assets/images/town1.png" />
+        <img class="person" id="person" src="assets/images/person.png" /> 
+        <img class="person" id="person2" src="assets/images/person2.png" /> 
+        <img class="person" id="person3" src="assets/images/person3.png" />
+        <img class="person" id="person4" src="assets/images/person4.png" />
+        <img class="full" id="speech" src="assets/images/speech.png" />
+        <img class="buttona" id="button1a" src="assets/images/manip_button1a.png" />
+        <img class="buttonb" id="button1b" src="assets/images/manip_button1b.png" />
+        <img class="buttona" id="button2a" src="assets/images/manip_button2a.png" />
+        <img class="buttonb" id="button2b" src="assets/images/manip_button2b.png" />
+        <img class="responsea" id="correcta" src="assets/images/check.png" />
+        <img class="responsea" id="wronga" src="assets/images/x.png" />
+        <img class="responseb" id="wrongb" src="assets/images/x.png" />
+        <img class="responseb" id="correctb" src="assets/images/check.png" />
+    </div>
+
+<!-- AUDIO -->
+    <!-- setTimeout(function () { }, 1000); delays the playing of the next audio; 
+        number is in milliseconds. e.g., 1000 = 1 second;
+        otherwise, audio starts playing immediately after the end of another -->
+
+    <!-- onended="document.getElementById('').play()" finds the next audio to play
+        after current audio ends and plays it -->
+
+    <!-- AUDIO 1: Before I got into town,  -->
+        <audio 
+            id="audio" 
+            onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 2000)" 
+            onended="setTimeout(function () { document.getElementById('audio2').play();}, 0);"
+        >
+            <source src="assets/audio/knowledgecheck1.mp3" />
+        </audio>
+
+        <!-- I had some weird issues with chrome (because of the autoplay issues) that 
+        could oddly be fixed if I opened the html in the web browser with this code uncommented
+        and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
+        They've discussed changing this policy back, but either way, using the audio tag above
+        or the iframe solution should get the audio to autoplay. You only need to use the iframe
+        solution for the first audio. All other audio afterward will successfully autoplay  -->
+        <!-- <iframe 
+            src="assets/audio/intro_k.mp3" 
+            allow="autoplay" 
+            style="display:none" 
+            id="audio1">
+        </iframe> -->
+
+
+    <!-- AUDIO 2: Should I say .. -->
+        <audio 
+            id="audio2" 
+            onended="setTimeout(function () { document.getElementById('audio3').play();}, 2000);"
+        >
+                <source src="assets/audio/knowledgecheck2.mp3" />
+        </audio>
+
+    <!-- AUDIO 3: Knowledge Condition, manip correct audio -->    
+        <audio 
+            id="audio3" 
+            onended="setTimeout(function () { document.getElementById('audio4').play();}, 2000);">
+            <source src="assets/audio/knowledgecheck1_k_correct.mp3" />
+        </audio>
+
+    <!-- AUDIO 4: Knowledge Condition, manip wrong audio  -->
+        <audio 
+            id="audio4" 
+            onended="setTimeout(function () { document.getElementById('audio5').play();}, 2000);">
+            <source src="assets/audio/knowledgecheck1_k_wrong.mp3" />
+        </audio>  
+
+    <!-- AUDIO 5: No Knowledge Condition, manip correct audio-->   
+        <audio 
+            id="audio5" 
+            onended="setTimeout(function () { document.getElementById('audio6').play();}, 2000);">
+            <source src="assets/audio/knowledgecheck1_nk_correct.mp3" />
+        </audio>
+
+    <!-- AUDIO 6: No Knowledge Condition, manip wrong audio -->
+        <audio  
+            id="audio6" 
+            onended="setTimeout(function () { document.getElementById('audio7').play();}, 2000);">
+            <source src="assets/audio/knowledgecheck1_nk_wrong.mp3" />
+        </audio>
+    
+    <!-- AUDIO 7: let's go for a walk around  -->
+        <!-- <audio preload id="audio7">
+            <source src="assets/audio/attention4_k.mp3" />
+        </audio> -->
+
+</body>
+</html>

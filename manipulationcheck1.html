@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/manipulationcheck_knowledge.css">
+    <link rel="stylesheet" href="css/manipulationcheck1.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
@@ -27,8 +27,6 @@
         <img class="full" id="speech" src="assets/images/speech.png" />
         <img class="buttona" id="button1a" src="assets/images/manip_button1a.png" />
         <img class="buttonb" id="button1b" src="assets/images/manip_button1b.png" />
-        <img class="buttona" id="button2a" src="assets/images/manip_button2a.png" />
-        <img class="buttonb" id="button2b" src="assets/images/manip_button2b.png" />
         <img class="responsea" id="correcta" src="assets/images/check.png" />
         <img class="responsea" id="wronga" src="assets/images/x.png" />
         <img class="responseb" id="wrongb" src="assets/images/x.png" />
@@ -97,15 +95,9 @@
 
     <!-- AUDIO 6: No Knowledge Condition, manip wrong audio -->
         <audio  
-            id="audio6" 
-            onended="setTimeout(function () { document.getElementById('audio7').play();}, 2000);">
+            id="audio6" >
             <source src="assets/audio/knowledgecheck1_nk_wrong.mp3" />
         </audio>
-    
-    <!-- AUDIO 7: let's go for a walk around  -->
-        <!-- <audio preload id="audio7">
-            <source src="assets/audio/attention4_k.mp3" />
-        </audio> -->
 
 </body>
 </html>

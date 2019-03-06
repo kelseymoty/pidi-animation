@@ -13,12 +13,6 @@ img#town {
 
 img.person {
     opacity: 0;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 }
 
 img#person {
@@ -129,14 +123,6 @@ img#wronga {
     animation-duration: 0s;
     animation-delay: 33s;
     animation-fill-mode: forwards;   
-}
-
-img#button2a {
-    opacity: 0;   
-}
-
-img#button2b {
-    opacity: 0;  
 }
 
 /* Library of animations */

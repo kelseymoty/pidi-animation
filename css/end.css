@@ -1,0 +1,215 @@
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+img#sarah4 {
+    position: absolute;
+    left: 0%;
+    top: 0%; 
+    width: 100%; 
+    animation-name: fadeOut;
+    animation-duration: 0.1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+img#sarahHappy {
+    opacity: 0;
+    position: absolute;
+    left: 0%;
+    top: 0%; 
+    width: 100%; 
+    animation-name: fadeIn, moveLeft;
+    animation-duration: 0s, 1s;
+    animation-delay: 2.95s, 5.8s;
+    animation-fill-mode: forwards;
+    z-index: 10;
+}
+
+img.firework {
+    position: absolute;
+    opacity: 0;
+}
+
+img#firework2 {
+    top: 5%;
+    right: 10%;
+    width: 40%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 3s, 2.95s, 3.4s;
+    animation-fill-mode: forwards;
+}
+
+img#firework3 {
+    right: 5%;
+    top: 20%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 3.5s, 3.45s, 4s;
+    animation-fill-mode: forwards;
+}
+
+img#firework4 {
+    right: 20%;
+    top: 30%;
+    width: 30%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 3.6s, 3.55s, 4.1s;
+    animation-fill-mode: forwards;
+}
+
+img#firework1 {
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 3.9s, 3.85s, 4.4s;
+    animation-fill-mode: forwards;
+}
+
+img#firework5 {
+    left: 40%;
+    top: 3%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 4.2s, 4.15s, 4.7s;
+    animation-fill-mode: forwards;
+}
+
+img#firework6 { 
+    left: 50%;
+    top: 10%;
+    width: 40%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 4.4s, 4.35s, 4.9s;
+    animation-fill-mode: forwards;
+}
+
+img#firework8 {
+    top: 5%;
+    right: 10%;
+    width: 40%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 4.6s, 4.55s, 5s;
+    animation-fill-mode: forwards;
+}
+
+img#firework9 {
+    right: 5%;
+    top: 20%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 4.8s, 4.75s, 5.5s;
+    animation-fill-mode: forwards;
+}
+
+img#firework10 {
+    right: 20%;
+    top: 30%;
+    width: 30%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 4.9s, 4.85s, 5.5s;
+    animation-fill-mode: forwards;
+}
+
+img#firework7 {
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 5.2s, 5.15s, 5.8s;
+    animation-fill-mode: forwards;
+}
+
+img#firework11 {
+    left: 40%;
+    top: 3%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 5.35s, 5.3s, 5.7s;
+    animation-fill-mode: forwards;
+}
+
+img#firework12 { 
+    left: 50%;
+    top: 10%;
+    width: 40%;
+    animation-name: fadeIn, zoomIn, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 5.4s, 5.35s, 5.85s;
+    animation-fill-mode: forwards;
+}
+
+/* Library of animations */
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut50 {
+    0% {opacity: 1}
+    100% {opacity: 0.5}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes fadeIn50 {
+    0% {opacity: 0.5}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes sarahMoves {
+    100% {left: 73%; top: 3%; width: 40%;}    
+}
+
+@keyframes moveLeft {
+    100% {left: -60%}
+}
+
+

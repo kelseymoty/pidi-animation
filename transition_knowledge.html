@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/transition_knowledge.css">
+
+    <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
+    <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+    </script>
+</head>
+
+<body>
+<!-- This code is set up to run introduction for knowledgeable speaker -->
+
+<!-- IMAGES -->
+    <div id="images">
+        <img id="town1" src="assets/images/neighborhood2.png" />
+        <img id="town2" src="assets/images/neighborhood2.png" />
+        <img id="sarah1" src="assets/images/sarah1.png" />
+        <img id="sarahUp" src="assets/images/sarah_up.png" />
+        <img id="sarah4" src="assets/images/sarah4.png" />
+    </div>
+
+<!-- AUDIO -->
+    <!-- setTimeout(function () { }, 1000); delays the playing of the next audio; 
+        number is in milliseconds. e.g., 1000 = 1 second;
+        otherwise, audio starts playing immediately after the end of another -->
+
+    <!-- onended="document.getElementById('').play()" finds the next audio to play
+        after current audio ends and plays it -->
+
+    <!-- AUDIO 1: They asked me  -->
+        <audio 
+            id="audio" 
+            onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 2000)" 
+        >
+            <source src="assets/audio/transition1_k.mp3" />
+        </audio>
+
+        <!-- I had some weird issues with chrome (because of the autoplay issues) that 
+        could oddly be fixed if I opened the html in the web browser with this code uncommented
+        and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
+        They've discussed changing this policy back, but either way, using the audio tag above
+        or the iframe solution should get the audio to autoplay. You only need to use the iframe
+        solution for the first audio. All other audio afterward will successfully autoplay  -->
+        <!-- <iframe 
+            src="assets/audio/intro_k.mp3" 
+            allow="autoplay" 
+            style="display:none" 
+            id="audio1">
+        </iframe> -->
+
+</body>
+</html>

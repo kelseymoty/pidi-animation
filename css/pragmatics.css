@@ -123,7 +123,7 @@ img#sarahConfused {
     top: 5%;  
     animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
     animation-duration: 0.1s;
-    animation-delay: 19s, 27s, 30.5s, 36s, 38.75s, 44s, 47.5s, 52.5s, 55.5s, 61s, 64.25s, 75s;
+    animation-delay: 20s, 27s, 30.5s, 36s, 38.75s, 44s, 47.5s, 52.5s, 55.5s, 61s, 64.25s, 75s;
     animation-fill-mode: forwards;
     z-index: 11;
 }

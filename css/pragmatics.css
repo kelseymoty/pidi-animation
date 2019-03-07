@@ -9,9 +9,9 @@ img#sarah1 {
     left: 0%;
     top: 0%; 
     width: 100%; 
-    animation-name: fadeIn, fadeOut;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
     animation-duration: 0s;
-    animation-delay: 3.1s, 3.5s;
+    animation-delay: 3.1s, 3.75s, 11.5s, 12.5s;
     animation-fill-mode: forwards;
     z-index: 2;
 }
@@ -22,9 +22,9 @@ img#sarahUp {
     top: 0%; 
     width: 100%; 
     position: absolute;
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-name: fadeIn, fadeOut;
     animation-duration: 0s;
-    animation-delay: 7.0s, 9.72s, 11.5s, 12.5s;
+    animation-delay: 7.0s, 9.72s;
     animation-fill-mode: forwards;
     z-index: 3;
 }
@@ -37,7 +37,7 @@ img#sarahPoint {
     width: 100%; 
     animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
     animation-duration: 0s;
-    animation-delay: 9.7s, 10.5s, 13.75s, 15s;
+    animation-delay: 9.7s, 10.5s, 13.5s, 15s;
     animation-fill-mode: forwards;
     z-index: 4;
 }
@@ -49,7 +49,7 @@ img#sarah4 {
     width: 100%; 
     animation-name: fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, sarahMoves, fadeOut;
     animation-duration: 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 2s, .5s;
-    animation-delay: 3.12s, 3.48s, 7.02s, 10.48s, 11.52s, 12.48s, 13.77s, 14.98s, 15.1s, 16s;
+    animation-delay: 3.12s, 3.73s, 7.02s, 10.48s, 11.52s, 12.48s, 13.52s, 14.98s, 15.1s, 16s;
     animation-fill-mode: forwards;
     z-index: 1;
 }
@@ -115,6 +115,19 @@ img#pragmatics6 {
     animation-fill-mode: forwards;
 }
 
+img#sarahConfused {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;  
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0.1s;
+    animation-delay: 19s, 27s, 30.5s, 36s, 38.75s, 44s, 47.5s, 52.5s, 55.5s, 61s, 64.25s, 75s;
+    animation-fill-mode: forwards;
+    z-index: 11;
+}
+
 img#sarahHeadshotPoint {
     opacity: 0;
     position: absolute;
@@ -125,7 +138,7 @@ img#sarahHeadshotPoint {
     animation-duration: 0.1s;
     animation-delay: 21.5s, 27s, 32.5s, 36s, 41s, 44s, 49.5s, 52.5s, 57.5s, 61s, 66.25s, 75s;
     animation-fill-mode: forwards;
-    z-index: 11;
+    z-index: 12;
 }
 
 /* Library of animations */

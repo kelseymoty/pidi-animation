@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/pragmatics.css">
+
+    <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
+    <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+    </script>
+</head>
+
+<body>
+<!-- This code is set up to run introduction for knowledgeable speaker -->
+
+<!-- IMAGES -->
+    <div id="images">
+        <img id="sarahUp" src="assets/images/sarah_up.png" />
+        <img id="sarahPoint" src="assets/images/sarah_point.png" />
+        <img id="sarahHeadshotPoint" src="assets/images/sarah_one.png" />
+        <img id="sarahHeadshot" src="assets/images/sarah_headshot.png" />
+        <img id="sarah1" src="assets/images/sarah1.png" />
+        <img id="sarah4" src="assets/images/sarah4.png" />
+        <img class="pragmatics" id="pragmatics1" src="assets/images/pragmatics1.png" />
+        <img class="pragmatics" id="pragmatics2" src="assets/images/pragmatics2.png" />
+        <img class="pragmatics" id="pragmatics3" src="assets/images/pragmatics3.png" />
+        <img class="pragmatics" id="pragmatics4" src="assets/images/pragmatics4.png" />
+        <img class="pragmatics" id="pragmatics5" src="assets/images/pragmatics5.png" />
+        <img class="pragmatics" id="pragmatics6" src="assets/images/pragmatics6.png" />
+    </div>
+
+<!-- AUDIO -->
+    <!-- setTimeout(function () { }, 1000); delays the playing of the next audio; 
+        number is in milliseconds. e.g., 1000 = 1 second;
+        otherwise, audio starts playing immediately after the end of another -->
+
+    <!-- onended="document.getElementById('').play()" finds the next audio to play
+        after current audio ends and plays it -->
+
+    <!-- AUDIO 1: They asked me  -->
+        <audio 
+            id="audio" 
+            onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 2000)" 
+            onended="setTimeout(function () { document.getElementById('audio2').play();}, 2000);"
+        >
+            <source src="assets/audio/PiDi_4.mp4" />
+        </audio>
+
+        <!-- I had some weird issues with chrome (because of the autoplay issues) that 
+        could oddly be fixed if I opened the html in the web browser with this code uncommented
+        and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
+        They've discussed changing this policy back, but either way, using the audio tag above
+        or the iframe solution should get the audio to autoplay. You only need to use the iframe
+        solution for the first audio. All other audio afterward will successfully autoplay  -->
+        <!-- <iframe 
+            src="assets/audio/intro_k.mp3" 
+            allow="autoplay" 
+            style="display:none" 
+            id="audio1">
+        </iframe> -->
+
+    <!-- AUDIO 2: Should I say .. -->
+        <audio 
+            id="audio2" 
+            onended="setTimeout(function () { document.getElementById('audio3').play();}, 2000);"
+        >
+                <source src="assets/audio/PiDi_5a_1.mp4" />
+        </audio>
+
+    <!-- AUDIO 3: Knowledge Condition, manip correct audio -->    
+        <audio 
+            id="audio3" 
+            onended="setTimeout(function () { document.getElementById('audio4').play();}, 2000);">
+            <source src="assets/audio/PiDi_5b_1.mp4" />
+        </audio>
+
+    <!-- AUDIO 4: Knowledge Condition, manip wrong audio  -->
+        <audio 
+            id="audio4" 
+            onended="setTimeout(function () { document.getElementById('audio5').play();}, 2000);">
+            <source src="assets/audio/PiDi_5c_1.mp4" />
+        </audio>  
+
+    <!-- AUDIO 5: No Knowledge Condition, manip correct audio-->   
+        <audio 
+            id="audio5" 
+            onended="setTimeout(function () { document.getElementById('audio6').play();}, 2000);">
+            <source src="assets/audio/PiDi_5d_1.mp4" />
+        </audio>
+
+    <!-- AUDIO 6: No Knowledge Condition, manip wrong audio -->
+        <audio  
+            id="audio6" >
+            <source src="assets/audio/PiDi_5e_1.mp4" />
+        </audio>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+img#sarah1 {
+    opacity: 0;
+    position: absolute;
+    left: 0%;
+    top: 0%; 
+    width: 100%; 
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 3.1s, 3.5s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+img#sarahUp {
+    opacity: 0;
+    left: 0%;
+    top: 0%; 
+    width: 100%; 
+    position: absolute;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 7.0s, 9.72s, 11.5s, 12.5s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+img#sarahPoint {
+    opacity: 0;
+    position: absolute;
+    left: 0%;
+    top: 0%; 
+    width: 100%; 
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 9.7s, 10.5s, 13.75s, 15s;
+    animation-fill-mode: forwards;
+    z-index: 4;
+}
+
+img#sarah4 {
+    position: absolute;
+    left: 0%;
+    top: 0%; 
+    width: 100%; 
+    animation-name: fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, sarahMoves, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 2s, .5s;
+    animation-delay: 3.12s, 3.48s, 7.02s, 10.48s, 11.52s, 12.48s, 13.77s, 14.98s, 15.1s, 16s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+img#sarahHeadshot {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;  
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 16s;
+    animation-fill-mode: forwards;
+    z-index: 10;
+}
+
+img.pragmatics {
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+}
+
+img#pragmatics1 {
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 17s;
+    animation-fill-mode: forwards;
+}
+
+img#pragmatics2 {
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 28s;
+    animation-fill-mode: forwards;
+}
+
+img#pragmatics3 {
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 37s;
+    animation-fill-mode: forwards;
+}
+
+img#pragmatics4 {
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 45s;
+    animation-fill-mode: forwards;
+}
+
+img#pragmatics5 {
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 53.5s;
+    animation-fill-mode: forwards;
+}
+
+img#pragmatics6 {
+    animation-name: fadeIn;
+    animation-duration: 0s;
+    animation-delay: 62s;
+    animation-fill-mode: forwards;
+}
+
+img#sarahHeadshotPoint {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;  
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0.1s;
+    animation-delay: 21.5s, 27s, 32.5s, 36s, 41s, 44s, 49.5s, 52.5s, 57.5s, 61s, 66.25s, 75s;
+    animation-fill-mode: forwards;
+    z-index: 11;
+}
+
+/* Library of animations */
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut50 {
+    0% {opacity: 1}
+    100% {opacity: 0.5}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes fadeIn50 {
+    0% {opacity: 0.5}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes sarahMoves {
+    100% {left: 73%; top: 3%; width: 40%;}    
+}
+
+@keyframes moveRight75 {
+    100% {left: 25%}
+}
+
+

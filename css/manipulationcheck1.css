@@ -15,6 +15,44 @@ img.person {
     opacity: 0;
 }
 
+img.sarah {
+    position: absolute;
+    left: 5%;
+    width: 20%;
+    top: 5%;  
+}
+
+img#sarah_h {
+    z-index: 10;
+}
+
+img#sarah_confused {
+    opacity: 0; 
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn;
+    animation-duration: .25s, .25s, 0s, .25s, 0s;
+    animation-delay: 9s, 16s, 20s, 27s, 32s;
+    animation-fill-mode: forwards;
+    z-index: 11;
+}
+
+img#sarah_sad {
+    opacity: 0; 
+    animation-name: fadeIn, fadeOut, fadeIn;
+    animation-duration: .25s;
+    animation-delay: 21s, 26s, 33s;
+    animation-fill-mode: forwards;
+    z-index: 12;
+}
+
+img#sarah_waves {
+    opacity: 0; 
+    animation-name: fadeIn, fadeOut;
+    animation-duration: .25s, .25s;
+    animation-delay: 4.2s, 5s;
+    animation-fill-mode: forwards;
+    z-index: 11;
+}
+
 img#person {
     animation-name: fadeIn;
     animation-duration: 0s;

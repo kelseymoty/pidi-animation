@@ -19,10 +19,10 @@
 
 <!-- IMAGES -->
     <div id="images">
-        <img class="full" id="town" src="assets/images/town1.png" />
         <img class="sarah" id="sarah_h" src="assets/images/sarah_headshot.png" />
         <img class="sarah" id="sarah_confused" src="assets/images/sarah_confused.png" />
         <img class="sarah" id="sarah_sad" src="assets/images/sarah_sad.png" />
+        <img id="sarah_up" src="assets/images/sarah_up.png" />
         <img class="person" id="person2" src="assets/images/person2.png" /> 
         <img class="full" id="speech" src="assets/images/speech.png" />
         <img class="buttona" id="button2a" src="assets/images/manip_button2a.png" />
@@ -31,6 +31,7 @@
         <img class="responsea" id="wronga" src="assets/images/x.png" />
         <img class="responseb" id="wrongb" src="assets/images/x.png" />
         <img class="responseb" id="correctb" src="assets/images/check.png" />
+        <img class="full" id="town" src="assets/images/town1.png" />
     </div>
 
 <!-- AUDIO -->
@@ -94,8 +95,14 @@
 
     <!-- AUDIO 6: No Knowledge Condition, manip wrong audio -->
         <audio  
-            id="audio6" >
+            id="audio6" 
+            onended="setTimeout(function () { document.getElementById('audio7').play();}, 2000);">
             <source src="assets/audio/knowledgecheck3_nk_wrong.mp3" />
+        </audio>
+
+        <audio  
+            id="audio7">
+            <source src="assets/audio/manipulation_transition_nk.mp3" />
         </audio>
 
 </body>

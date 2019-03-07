@@ -11,6 +11,17 @@ img#town {
     z-index: 1;
 }
 
+img#sarah_up {
+    position: absolute;
+    opacity: 0;
+    right: 50%;
+    animation-name: fadeIn, moveRight50-20;
+    animation-duration: .25s, 4s;
+    animation-delay: 31s, 31s;
+    animation-fill-mode: forwards;
+    z-index: 20;
+}
+
 img.sarah {
     position: absolute;
     left: 5%;
@@ -20,32 +31,45 @@ img.sarah {
 
 img#sarah_h {
     z-index: 10;
+    animation-name: fadeOut;
+    animation-duration:  0s;
+    animation-delay: 30s;
+    animation-fill-mode: forwards;
+    
 }
 
 img#sarah_confused {
     opacity: 0; 
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn;
-    animation-duration: .25s, .25s, 0s, .25s, 0s;
-    animation-delay: 5.5s, 11s, 15s, 20.5s, 25s;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: .25s, .25s, 0s, .25s, 0s, 0s;
+    animation-delay: 5.5s, 11s, 15s, 20.5s, 25s, 30s;
     animation-fill-mode: forwards;
     z-index: 11;
 }
 
 img#sarah_sad {
     opacity: 0; 
-    animation-name: fadeIn, fadeOut, fadeIn;
-    animation-duration: .25s, 0s, .25s;
-    animation-delay: 16s, 20s, 25.5s;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: .25s, 0s, .25s, 0s;
+    animation-delay: 16s, 20s, 25.5s, 30s;
     animation-fill-mode: forwards;
     z-index: 12;
 }
 
 img#person2 {
     z-index: 2;
+    animation-name: fadeOut;
+    animation-duration:  0s;
+    animation-delay: 30s;
+    animation-fill-mode: forwards;
 }
 
 img#speech {
     z-index: 3; 
+    animation-name: fadeOut;
+    animation-duration:  0s;
+    animation-delay: 30s;
+    animation-fill-mode: forwards;
 }
 
 img.buttona, img.buttonb {
@@ -66,18 +90,18 @@ img.responsea, img.responseb {
 img#button2a {
     left: 8%;
     z-index: 7;
-    animation-name: fadeIn, pulseSmall, wiggle, pulseSmall, pulseSmall, fadeOut50, fadeIn50, fadeOut50;
-    animation-duration: 0s, 1s, 1s, 1s, 1s, .5s, 0s, .5s;
-    animation-delay: 2.75s, 2.75s, 6.75s, 11.5s, 16.5s, 20.5s, 25s, 25.5s; /* 33s;*/
+    animation-name: fadeIn, pulseSmall, wiggle, pulseSmall, pulseSmall, fadeOut50, fadeIn50, fadeOut50, fadeOut;
+    animation-duration: 0s, 1s, 1s, 1s, 1s, .5s, 0s, .5s, 0s;
+    animation-delay: 2.75s, 2.75s, 6.75s, 11.5s, 16.5s, 20.5s, 25s, 25.5s, 30s; /* 33s;*/
     animation-fill-mode: forwards; 
 }
 
 img#button2b {
     right: 8%;
     z-index: 8;
-    animation-name: fadeIn, pulseSmall, wiggle, fadeOut50, fadeIn50, fadeOut50, fadeIn50, pulseSmall, pulseSmall;
-    animation-duration: 0s, 1s, 1s, .5s, 0s, .5s, 0s, 1s, 1s;
-    animation-delay: 4s, 4s, 8s, 11s, 15s, 16s, 20s, 21s, 26s; /*33.5s;*/
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut50, fadeIn50, fadeOut50, fadeIn50, pulseSmall, pulseSmall, fadeOut;
+    animation-duration: 0s, 1s, 1s, .5s, 0s, .5s, 0s, 1s, 1s, 0s;
+    animation-delay: 4s, 4s, 8s, 11s, 15s, 16s, 20s, 21s, 26s, 30s; /*33.5s;*/
     animation-fill-mode: forwards; 
 }
 
@@ -111,9 +135,9 @@ img#correctb {
 img#wronga {
     left: 8%;
     z-index: 8;
-    animation-name: fadeIn;
+    animation-name: fadeIn, fadeOut;
     animation-duration: 0s;
-    animation-delay: 25.5s;
+    animation-delay: 25.5s, 30s;
     animation-fill-mode: forwards;   
 }
 
@@ -182,8 +206,12 @@ img#wronga {
     100% {left: 73%; top: 3%; width: 25%;}    
 }
 
-@keyframes moveRight {
-    100% {left: 25%}
+@keyframes moveRight50-20 {
+    0% {}
+    40% {right: -20%}
+    60% {right: -20%}
+    100% {right: -120%}
 }
+
 
 

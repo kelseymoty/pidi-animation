@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/animaltask.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- chrome doesn't allow autoplay of audio as of April 2018 -->
+    <!-- script sourced from here: https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio -->
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+    </script>
+</head>
+
+<body>
+<!-- This code is set up to run introduction for knowledgeable speaker -->
+
+<!-- IMAGES -->
+    <div id="images">
+        <img class="sarah" id="sarah1a" src="assets/images/sarah1.png" />
+        <img class="sarah" id="sarah2" src="assets/images/sarah2.png" />
+        <img class="sarah" id="sarah3" src="assets/images/sarah3.png" />
+        <img class="sarah" id="sarah4" src="assets/images/sarah4.png" />
+        <img class="sarah" id="sarah_up" src="assets/images/sarah_up.png" />
+        <img class="sarah" id="sarah_point" src="assets/images/sarah_point.png" />
+        <img id="book" src="assets/images/book2.png" />
+        <img id="cardinal" src="assets/images/cardinal.png" />
+        <img id="bluejay" src="assets/images/bluejay.jpg" />
+        <img id="birds" src="assets/images/birds.png" />
+        <img class="sentence" id="sentence1" src="assets/images/sentence1.png" />
+        <img class="sentence" id="sentence2" src="assets/images/sentence2.png" />
+        <img class="sentence" id="sentence3" src="assets/images/sentence3.png" />        
+        <img class="sentence" id="sentence4" src="assets/images/sentence4.png" />
+        <img class="sentence" id="sentence5" src="assets/images/sentence5.png" />
+        <img class="sentence" id="sentence6" src="assets/images/sentence6.png" />
+    </div>
+
+<!-- AUDIO -->
+    <!-- setTimeout(function () { }, 1000); delays the playing of the next audio; 
+        number is in milliseconds. e.g., 1000 = 1 second;
+        otherwise, audio starts playing immediately after the end of another -->
+
+    <!-- onended="document.getElementById('').play()" finds the next audio to play
+        after current audio ends and plays it -->
+
+    <!-- AUDIO 1: Hi, my name is Sarah! Writing book about birds -->
+        <audio 
+            id="audio" 
+            onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 2000)" 
+            onended="setTimeout(function () { document.getElementById('audio2').play();}, 1000);"
+        >
+            <source src="assets/audio/pidi_animal1.mp3" />
+        </audio>
+
+        <!-- I had some weird issues with chrome (because of the autoplay issues) that 
+        could oddly be fixed if I opened the html in the web browser with this code uncommented
+        and then comment it out, save, and refresh browser. If this doesn't make sense, slack me.
+        They've discussed changing this policy back, but either way, using the audio tag above
+        or the iframe solution should get the audio to autoplay. You only need to use the iframe
+        solution for the first audio. All other audio afterward will successfully autoplay  -->
+        <!-- <iframe 
+            src="assets/audio/intro_k.mp3" 
+            allow="autoplay" 
+            style="display:none" 
+            id="audio1">
+        </iframe> -->
+
+
+    <!-- AUDIO 2: Two birds I included in my book -->
+        <audio 
+            id="audio2" 
+            onended="setTimeout(function () { document.getElementById('audio3').play();}, 500);"
+            >
+                <source src="assets/audio/pidi_animal2.mp3" />
+        </audio>
+
+    <!-- AUDIO 3: Lets look at my book! Here are some of the things I wrote -->    
+        <audio 
+            id="audio3" 
+            onended="setTimeout(function () { document.getElementById('audio4').play();}, 2000);">
+            <source src="assets/audio/pidi_animal3.mp3" />
+        </audio>
+
+    <!-- AUDIO 4: This one is a zarpie  -->
+        <audio 
+            id="audio4" 
+            onended="setTimeout(function () { document.getElementById('audio5').play();}, 2000);">
+            <source src="assets/audio/pidi_animal4.mp3" />
+        </audio>  
+
+    <!-- AUDIO 5: Do you know which one is a gorp -->   
+        <audio 
+            id="audio5" 
+            onended="setTimeout(function () { document.getElementById('audio6').play();}, 2000);">
+            <source src="assets/audio/pidi_animal5.mp3" />
+        </audio>
+
+    <!-- AUDIO 6: This one is a gorp -->
+        <audio 
+            id="audio6">
+            <source src="assets/audio/pidi_animal6.mp3" />
+        </audio>
+
+</body>
+</html>

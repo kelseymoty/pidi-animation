@@ -1,0 +1,275 @@
+
+/* introduction.html-specific CSS  */
+
+img#sarah1a, img#sarah2, img#sarah3, img#sarah_point, img#sarah_up {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    opacity: 0;
+}
+
+img#sarah4 {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    animation-name: fadeOut, fadeIn, moveRight50, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 1s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 2s, 3s, 4s, 6.5s, 8.48s, 13.5s, 14.98s, 36.7s, 41s, 51.2s, 56s, 65.2s, 70s, 73.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+}
+
+img#sarah1a {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, moveRight50, fadeIn;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 1.9s, 2s, 2.22s, 3.05s, 4s, 73.23s;
+    animation-fill-mode: forwards; 
+    z-index: 3;
+}
+
+img#sarah2 {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 1.98s, 2.08s, 2.14s, 2.24s;
+    animation-fill-mode: forwards; 
+    z-index: 4;
+}
+
+img#sarah3 {
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 2.06s, 2.16s;
+    animation-fill-mode: forwards; 
+    z-index: 5;
+}
+
+img#sarah_up {
+    animation-name: moveRight50, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 1s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 4s, 6.48s, 8.5s, 13.48s, 14s, 36.68s, 39.25s, 51.18s, 53.75s, 65.18s, 68.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img#sarah_point {
+    animation-name: moveRight50, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 1s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 4s, 13.9s, 15s, 39.23s, 41.02s, 53.68s, 56.02s, 68.23s, 70.02s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+/* img#sarah1a {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 1.9s, 2s, 2.22s, 2.32s, 2.54s, 2.64s;
+    animation-fill-mode: forwards; 
+    z-index: 3;
+}
+
+img#sarah2 {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 1.98s, 2.08s, 2.14s, 2.24s, 2.3s, 2.4s, 2.46s, 2.56s;
+    animation-fill-mode: forwards; 
+    z-index: 4;
+}
+
+img#sarah3 {
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: 0s;
+    animation-delay: 2.06s, 2.16s, 2.38s, 2.48s;
+    animation-fill-mode: forwards; 
+    z-index: 5;
+} */
+
+img#book {
+    opacity: 0; 
+    position: absolute;
+    width: 80%;
+    left: 5%; 
+    animation-name: fadeIn, pulseSmall, wiggle, pulseSmall, fadeOut, fadeIn, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, .5s, 1s, .5s;
+    animation-delay: 4.5s, 8s, 12.5s, 16.5s, 17.5s, 29s, 73s;
+    animation-fill-mode: forwards; 
+    z-index: 0;
+}
+
+img#birds {
+    opacity: 0; 
+    position: absolute;
+    width: 40%;
+    left: 25%;
+    top: 18%;
+    animation-name: fadeIn, pulseSmall, wiggle, pulseSmall, fadeOut;
+    animation-duration: .5s, 1s, 1s, 1s, .5s;
+    animation-delay: 5s, 8s, 12.5s, 16.5s, 17.5s;
+    animation-fill-mode: forwards; 
+    z-index: 1;
+}
+
+img#cardinal, img#bluejay {
+    opacity: 0;
+}
+
+img#cardinal {
+    position: absolute;
+    width: 20%;
+    left: 15%;
+    top: 18%;
+    animation-name: fadeIn, wiggle, pulseMedium, pulseMedium, fadeOut;
+    animation-duration: .5s, 1s, 1s, 1s, .5s;
+    animation-delay: 18s, 19s, 21.5s, 25s, 28.5s;
+    animation-fill-mode: forwards;    
+}
+
+img#bluejay {
+    position: absolute;
+    width: 30%;
+    left: 40%;
+    top: 18%;
+    animation-name: fadeIn, wiggle, pulseMedium, pulseMedium, fadeOut;
+    animation-duration: .5s, 1s, 1s, 1s, .5s;
+    animation-delay: 18s, 19s, 23s, 25.5s, 28.5s;
+    animation-fill-mode: forwards;    
+}
+
+img.sentence {
+    opacity: 0;
+    position: absolute;
+    top: 28%;
+}
+
+img#sentence1 {
+    left: 21%;
+    width: 25%;
+    animation-name: fadeIn, pulseSmall, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 30s, 33s, 43s;
+    animation-fill-mode: forwards;   
+}
+
+img#sentence2 {
+    left: 45%;
+    width: 25%;
+    animation-name: fadeIn, pulseSmall, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 30s, 34.5s, 43s;
+    animation-fill-mode: forwards;   
+}
+
+img#sentence3 {
+    left: 22%;
+    width: 23%;
+    animation-name: fadeIn, pulseSmall, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 44s, 47.5s, 57s;
+    animation-fill-mode: forwards;   
+}
+
+img#sentence4 {
+    left: 45%;
+    width: 23%;
+    animation-name: fadeIn, pulseSmall, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 44s, 49s, 57s;
+    animation-fill-mode: forwards;   
+}
+
+img#sentence5 {
+    left: 22%;
+    width: 23%;
+    animation-name: fadeIn, pulseSmall, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 58.5s, 61.5s, 72s;
+    animation-fill-mode: forwards;   
+}
+
+img#sentence6 {
+    left: 45%;
+    width: 23%;
+    animation-name: fadeIn, pulseSmall, fadeOut;
+    animation-duration: .5s, 1s, .5s;
+    animation-delay: 58.5s, 63s, 72s;
+    animation-fill-mode: forwards;   
+}
+
+/* Library of animations */
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes pulseMedium {
+    0% {}
+    50% {transform: scale(1.15)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes moveRight75 {
+    100% {left: 75%; }    
+}
+
+@keyframes moveRight50 {
+    100% {left: 50%; }    
+}
+
+@keyframes moveLeft50_10 {
+    0% {left: 50%; }  
+    100% {left: 10%; }    
+}
+
+@keyframes moveRight {
+    100% {left: 25%}
+}
+
+

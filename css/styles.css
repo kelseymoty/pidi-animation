@@ -14,28 +14,94 @@ div#images {
 
 /* introduction.html-specific CSS  */
 img#sarah {
-    position: relative;
-    left: 25%;
-    width: 50%;
-    top: 25%;
-    animation-name: sarahMoves, fadeOut;
-    animation-duration: 3s, .25s;
-    animation-delay: 1s, 26.5s;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    animation-name: moveRight50, sarahMoves, sarahMovesAgain, fadeOut;
+    animation-duration: 0s, 1.5s, 4s, .25s;
+    animation-delay: 0.1s, 0.5s, 2.5s, 26.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
     z-index: 5;
 }
 
-img#neighborhood {
+img#sarah_headshot {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut, fadeIn, moveLeft5;
+    animation-duration: .5s, .25s, .25s, 2s;
+    animation-delay: 3.5s, 26.5s, 38s, 38.25s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+}
+
+img#sarah_two {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0.2s, 0.1s;
+    animation-delay: 11.25s, 15.5s;
+    animation-fill-mode: forwards;
+    z-index: 6;
+}
+
+img#sarah_left {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0.2s, 0.15s;
+    animation-delay: 19s, 21.5s;
+    animation-fill-mode: forwards;
+    z-index: 7;
+}
+
+img#sarah_right {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0.2s, 0.15s;
+    animation-delay: 22.5s, 25.5s;
+    animation-fill-mode: forwards;
+    z-index: 7;
+}
+
+img#neighborhood1 {
     height: 100vh;
     width: 100vw; 
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    animation-name: fadeIn, fadeOut, fadeIn, zoomIn, fadeOut;
-    animation-duration: 1s, .25s, .5s, 4s, 1s;
-    animation-delay: 2.5s, 26.5s, 38s, 38s, 40s;
+    animation-name: fadeIn, moveLeft-100, fadeOut, moveRight100, fadeIn, moveLeft-100;
+    animation-duration: 1s, 4s, .25s, 0s, .25s, 4s;
+    animation-delay: 1.5s, 2.5s, 26.5s, 27s, 38s, 38s;
+    animation-fill-mode: forwards; 
+    z-index: 3;   
+}
+
+img#neighborhood2 {
+    height: 100vh;
+    width: 100vw; 
+    transform: scale(-1, 1);
+    position: absolute;
+    top: 0;
+    left: 99.5%;
+    opacity: 0;
+    animation-name: fadeIn, moveLeft100, fadeOut, moveRight-100, fadeIn, moveLeft100;
+    animation-duration: 1s, 4s, .25s, 0s, .25s, 4s;
+    animation-delay: 1.5s, 2.5s, 26.5s, 27s, 38s, 38s;
     animation-fill-mode: forwards; 
     z-index: 3;   
 }
@@ -49,7 +115,7 @@ img#group_yellow {
     z-index: 4;
     animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
     animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
-    animation-delay: 7s, 13.5s, 17s, 19s, 21s, 26.5s;
+    animation-delay: 7s, 13s, 17s, 19s, 20.5s, 26.5s;
     animation-fill-mode: forwards; 
 }
 
@@ -62,7 +128,7 @@ img#group_green {
     z-index: 4;
     animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
     animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
-    animation-delay: 7s, 14.5s, 18s, 23s, 24.5s, 26.5s;
+    animation-delay: 7s, 14s, 18s, 23s, 24.5s, 26.5s;
     animation-fill-mode: forwards; 
 }
 
@@ -77,7 +143,7 @@ img#attn_yellow {
     left: 20%;
     animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
     animation-duration: .25s, 1s, 1s, .5s;
-    animation-delay: 27s, 27.5s, 31.5s, 37.5s;
+    animation-delay: 27s, 27.5s, 31s, 37.5s;
     animation-fill-mode: forwards;    
 }
 
@@ -85,7 +151,7 @@ img#attn_green {
     right: 20%;
     animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
     animation-duration: .25s, 1s, 1s, .5s;
-    animation-delay: 27s, 27.5s, 36s, 37.5s;
+    animation-delay: 27s, 27.5s, 35s, 37.5s;
     animation-fill-mode: forwards;  
 }
 
@@ -103,7 +169,7 @@ img#sarah1 {
     z-index: 5;
 }
 
-img#neighborhood1 {
+img#neighborhood1a {
     height: 100vh;
     width: 100vw; 
     position: absolute;
@@ -219,11 +285,50 @@ img#attn_green1 {
 }
 
 @keyframes sarahMoves {
-    100% {left: 73%; top: 3%; width: 25%;}    
+    0% {left: 50%;}
+    100% {left: 20%; top: 40%; width: 50%;} 
+}
+
+@keyframes sarahMovesAgain {
+    0% {left: 20%; top: 40%; width: 50%;}    
+    100% {left: -79%; top: 40%; width: 50%;}
+}
+
+@keyframes moveLeft5 {
+    100% {right: 75%; }    
+}
+
+@keyframes moveRight75 {
+    100% {left: 75%; }    
+}
+
+@keyframes moveLeft100 {
+    100% {left: 0%; }    
+}
+
+@keyframes moveLeft-100 {
+    100% {left: -99%; }    
+}
+
+@keyframes moveRight100 {
+    100% {right: 0%; }    
+}
+
+@keyframes moveRight-100 {
+    100% {right: -99%; }    
+}
+
+@keyframes moveLeft50_20 {
+    0% {left: 50%; }  
+    100% {left: 20%; }    
 }
 
 @keyframes moveRight {
     100% {left: 25%}
+}
+
+@keyframes smaller50 {
+    100% {width: 50%}
 }
 
 

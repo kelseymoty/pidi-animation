@@ -1,0 +1,360 @@
+/* General CSS */
+body {
+    overflow: hidden; 
+    margin: 0px;
+}
+
+div#images {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+}
+
+/* introduction.html-specific CSS  */
+img#sarah {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    animation-name: moveRight50, sarahMoves, sarahMovesAgain, fadeOut;
+    animation-duration: 0s, 1.5s, 4s, .25s;
+    animation-delay: 0.1s, 0.5s, 2.5s, 26.5s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+}
+
+img#sarah_headshot {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut, fadeIn, moveLeft5;
+    animation-duration: .5s, .25s, .25s, 2s;
+    animation-delay: 3.5s, 26.5s, 42s, 42.25s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+}
+
+img#sarah_shrug1 {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut;
+    animation-duration: .1s;
+    animation-delay: 9.98s, 13.17s, 17.48s, 22.02s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+}
+
+img#sarah_confused {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: .1s;
+    animation-delay: 6.75s, 10s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+}
+
+img#sarah_two {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0.05s, 0.1s;
+    animation-delay: 13.15s, 17.5s;
+    animation-fill-mode: forwards;
+    z-index: 6;
+}
+
+img#sarah_left {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0.1s, 0.05s;
+    animation-delay: 22s, 26.3s;
+    animation-fill-mode: forwards;
+    z-index: 7;
+}
+
+img#sarah_right {
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 5%;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 0.05s, 0.15s;
+    animation-delay: 26.28s, 30s;
+    animation-fill-mode: forwards;
+    z-index: 7;
+}
+
+img#neighborhood1 {
+    height: 100vh;
+    width: 100vw; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-name: fadeIn, moveLeft-100, fadeOut, moveRight100, fadeIn, moveLeft-100;
+    animation-duration: 1s, 4s, .25s, 0s, .25s, 4s;
+    animation-delay: 1.5s, 2.5s, 30s, 31s, 42s, 42s;
+    animation-fill-mode: forwards; 
+    z-index: 3;   
+}
+
+img#neighborhood2 {
+    height: 100vh;
+    width: 100vw; 
+    transform: scale(-1, 1);
+    position: absolute;
+    top: 0;
+    left: 99.5%;
+    opacity: 0;
+    animation-name: fadeIn, moveLeft100, fadeOut, moveRight-100, fadeIn, moveLeft100;
+    animation-duration: 1s, 4s, .25s, 0s, .25s, 4s;
+    animation-delay: 1.5s, 2.5s, 30s, 31s, 42s, 42s;
+    animation-fill-mode: forwards; 
+    z-index: 3;   
+}
+
+img#group_yellow {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    opacity: 0;
+    z-index: 4;
+    animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
+    animation-delay: 9s, 15.5s, 19.5s, 22s, 23.5s, 30s;
+    animation-fill-mode: forwards; 
+}
+
+img#group_green {
+    width: 35%;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    opacity: 0;
+    z-index: 4;
+    animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
+    animation-delay: 9s, 16s, 20.5s, 26.5s, 28s, 30s;
+    animation-fill-mode: forwards; 
+}
+
+img.attn {
+    height: 50%;
+    position: absolute;
+    top: 25%; 
+    opacity: 0;   
+}
+
+img#attn_yellow {
+    left: 20%;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
+    animation-duration: .25s, 1s, 1s, .5s;
+    animation-delay: 30.5s, 31s, 35s, 41.5s;
+    animation-fill-mode: forwards;    
+}
+
+img#attn_green {
+    right: 20%;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
+    animation-duration: .25s, 1s, 1s, .5s;
+    animation-delay: 30.5s, 31s, 39s, 41.5s;
+    animation-fill-mode: forwards;  
+}
+
+/* introduction_noknowledge.html-specific CSS  */
+img#sarah1 {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    top: 25%;
+    animation-name: sarahMoves, fadeOut;
+    animation-duration: 3s, .25s;
+    animation-delay: 1s, 29s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+img#neighborhood1a {
+    height: 100vh;
+    width: 100vw; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-name: fadeIn, fadeOut, fadeIn, zoomIn, fadeOut;
+    animation-duration: 1s, .25s, .5s, 4s, 1s;
+    animation-delay: 2.5s, 29s, 40.5s, 40.5s, 42s;
+    animation-fill-mode: forwards; 
+    z-index: 3;   
+}
+
+img#group_yellow1 {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    opacity: 0;
+    z-index: 4;
+    animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
+    animation-delay: 12s, 15s, 18.75s, 22s, 23.5s, 29s;
+    animation-fill-mode: forwards; 
+}
+
+img#group_green1 {
+    width: 35%;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    opacity: 0;
+    z-index: 4;
+    animation-name: fadeIn, pulseSmall, pulseSmall, wiggle, wiggle, fadeOut;
+    animation-duration: 1s, 1s, 1s, 1s, 1s, .25s;
+    animation-delay: 12s, 16s, 20s, 25.5s, 27s, 29s;
+    animation-fill-mode: forwards; 
+}
+
+img.attn1 {
+    height: 50%;
+    position: absolute;
+    top: 25%; 
+    opacity: 0;   
+}
+
+img#attn_yellow1 {
+    left: 20%;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
+    animation-duration: .25s, 1s, 1s, .5s;
+    animation-delay: 29.25s, 29.5s, 34.5s, 40.5s;
+    animation-fill-mode: forwards;    
+}
+
+img#attn_green1 {
+    right: 20%;
+    animation-name: fadeIn, pulseSmall, wiggle, fadeOut;
+    animation-duration: .25s, 1s, 1s, .5s;
+    animation-delay: 29.25s, 29.5s, 39s, 40.5s;
+    animation-fill-mode: forwards;  
+}
+
+
+/* Library of animations */
+@keyframes zoomIn2x {
+    0% {}
+    100% {transform: scale(2)}
+}
+
+@keyframes zoomIn {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {transform: scale(1)}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes pulseSmall {
+    0% {}
+    50% {transform: scale(1.05)} 
+    100% {transform: scale(1)} 
+}
+
+@keyframes selectRight {
+    0% {}
+    100% {left: 700px; top: -200px; transform: scale(1.5)}
+}
+
+@keyframes selectLeft {
+    0% {}
+    100% {left: -350px; top: -125px; transform: scale(1.5)}
+}
+
+@keyframes wiggle {
+  0% {}
+  20% {transform: rotate(2.5deg);}
+  40% {transform: rotate(-2.5deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-1.25deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes sarahMoves {
+    0% {left: 50%;}
+    100% {left: 20%; top: 40%; width: 50%;} 
+}
+
+@keyframes sarahMovesAgain {
+    0% {left: 20%; top: 40%; width: 50%;}    
+    100% {left: -79%; top: 40%; width: 50%;}
+}
+
+@keyframes moveLeft5 {
+    100% {right: 75%; }    
+}
+
+@keyframes moveRight75 {
+    100% {left: 75%; }    
+}
+
+@keyframes moveLeft100 {
+    100% {left: 0%; }    
+}
+
+@keyframes moveLeft-100 {
+    100% {left: -99%; }    
+}
+
+@keyframes moveRight100 {
+    100% {right: 0%; }    
+}
+
+@keyframes moveRight-100 {
+    100% {right: -99%; }    
+}
+
+@keyframes moveLeft50_20 {
+    0% {left: 50%; }  
+    100% {left: 20%; }    
+}
+
+@keyframes moveRight {
+    100% {left: 25%}
+}
+
+@keyframes smaller50 {
+    100% {width: 50%}
+}
+
+

@@ -14,18 +14,18 @@ img#sarah4 {
     left: 0%;
     width: 100%;
     top: 0%;
-    animation-name: fadeOut, fadeIn, moveRight50, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut;
-    animation-duration: 0s, 0s, 1s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s;
-    animation-delay: 2s, 3s, 4s, 6.5s, 8.48s, 13.5s, 14.98s, 36.7s, 41s, 51.2s, 56s, 65.2s, 70s, 73.25s;
+    animation-name: fadeOut, fadeIn, moveRight50, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn, fadeOut, fadeIn;
+    animation-duration: 0s, 0s, 1s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 2s, 3s, 4s, 6.5s, 8.48s, 13.5s, 14.98s, 36.7s, 41s, 51.2s, 56s, 65.2s, 70s, 73.02s, 73.48s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     z-index: 1;
 }
 
 img#sarah1a {
-    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, moveRight50, fadeIn;
-    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s;
-    animation-delay: 1.9s, 2s, 2.22s, 3.05s, 4s, 73.23s;
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, moveRight50, fadeIn, fadeOut;
+    animation-duration: 0s, 0s, 0s, 0s, 0s, 0s, 0s;
+    animation-delay: 1.9s, 2s, 2.22s, 3.05s, 4s, 73s, 73.5s;
     animation-fill-mode: forwards; 
     z-index: 3;
 }

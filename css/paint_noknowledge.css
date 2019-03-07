@@ -32,7 +32,7 @@ img#individual {
     z-index: 2;
     animation-name: fadeOut, pulseSmall, wiggle, wiggle, pulseSmall;
     animation-duration: 1s, 1s, 1s, 1s, 1s;
-    animation-delay: 18s, 6.5s, 8.5s, 10s, 12.5s;
+    animation-delay: 18s, 6.5s, 8.5s, 10s, 13.8s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }

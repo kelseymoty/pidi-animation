@@ -11,6 +11,35 @@ img#town {
     z-index: 1;
 }
 
+img.sarah {
+    position: absolute;
+    left: 5%;
+    width: 20%;
+    top: 5%;  
+}
+
+img#sarah_h {
+    z-index: 10;
+}
+
+img#sarah_confused {
+    opacity: 0; 
+    animation-name: fadeIn, fadeOut, fadeIn, fadeOut, fadeIn;
+    animation-duration: .25s, .25s, 0s, .25s, 0s;
+    animation-delay: 5.5s, 11s, 15s, 20.5s, 25s;
+    animation-fill-mode: forwards;
+    z-index: 11;
+}
+
+img#sarah_sad {
+    opacity: 0; 
+    animation-name: fadeIn, fadeOut, fadeIn;
+    animation-duration: .25s, 0s, .25s;
+    animation-delay: 16s, 20s, 25.5s;
+    animation-fill-mode: forwards;
+    z-index: 12;
+}
+
 img#person2 {
     z-index: 2;
 }

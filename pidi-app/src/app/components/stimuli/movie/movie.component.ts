@@ -26,13 +26,12 @@ export class MovieComponent implements Stimuli, Responsive, OnInit {
       this.pictureParameters.invisible = true;
       this.pictureParameters.coordinates = this.parameters.coordinates;
       this.pictureParameters.filename = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
-      if (this.thevideo.nativeElement.videoWidth > (innerWidth + 1)) {
+      if (innerWidth < 1920) {
         this.pictureParameters.width = innerWidth * .80;
-        this.pictureParameters.nativeWidth = this.thevideo.nativeElement.videoWidth;
-        this.pictureParameters.nativeHeight = this.thevideo.nativeElement.videoHeight;
+        this.pictureParameters.naturalWidth = this.thevideo.nativeElement.videoWidth;
+        this.pictureParameters.naturalHeight = this.thevideo.nativeElement.videoHeight;
         this.pictureParameters.height = innerHeight * .80 * ((innerWidth / innerHeight) /
-          (this.pictureParameters.nativeWidth / this.pictureParameters.nativeHeight));
-        console.log(this.pictureParameters, 'the picture paramters');
+          (this.pictureParameters.naturalWidth / this.pictureParameters.naturalHeight));
       } else {
         this.pictureParameters.width = this.thevideo.nativeElement.videoWidth;
         this.pictureParameters.height = this.thevideo.nativeElement.videoHeight;
@@ -53,12 +52,12 @@ export class MovieComponent implements Stimuli, Responsive, OnInit {
   videoStarted() {
     // setting width and height for "invisible picture"
     if (this.parameters.coordinates) {
-      if (this.thevideo.nativeElement.videoWidth > innerWidth) {
+      if (innerWidth < 1920) {
         this.pictureParameters.width = innerWidth * .80;
-        this.pictureParameters.nativeWidth = this.thevideo.nativeElement.videoWidth;
-        this.pictureParameters.nativeHeight = this.thevideo.nativeElement.videoHeight;
+        this.pictureParameters.naturalWidth = this.thevideo.nativeElement.videoWidth;
         this.pictureParameters.height = innerHeight * .80 * ((innerWidth / innerHeight) /
-          (this.pictureParameters.nativeWidth / this.pictureParameters.nativeHeight));
+          (this.thevideo.nativeElement.videoWidth / this.thevideo.nativeElement.videoHeight));
+        this.pictureParameters.naturalHeight = this.thevideo.nativeElement.videoHeight;
       } else {
         this.pictureParameters.width = this.thevideo.nativeElement.videoWidth;
         this.pictureParameters.height = this.thevideo.nativeElement.videoHeight;

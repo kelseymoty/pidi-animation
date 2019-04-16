@@ -1,3 +1,7 @@
-/* .largeVideo {
-  width: 80%;
-} */
+@media (max-width: 1920px) {
+
+  video {
+    width: 80%;
+  }
+
+}

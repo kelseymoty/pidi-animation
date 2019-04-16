@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ElementRef, ViewChild, 
 import { Stimuli, Responsive } from '../stimuli';
 import { Message } from '../../../message';
 import { AreaComponent } from '../../responders/area/area.component';
+import { MovieComponent } from '../movie/movie.component';
 
 @Component({
   selector: 'toku-picture',
@@ -37,11 +38,9 @@ export class PictureComponent implements Stimuli, Responsive, OnInit, AfterViewC
     // todo right now .parameters.nativeHeight starts out as 0 for a round
     // of the lifecycle and then populates after a second round
     // confirm that this is wired correctly
-    if ((this.value == null || this.value === 0) && this.parameters.nativeWidth > innerWidth) {
+    if ((this.value == null || this.value === 0) && innerWidth < 1920) {
       this.parameters.scalingFactor = this.getScalingFactor();
-      console.log('im inside and setting scalling factor', this.parameters.scalingFactor);
-      console.log(this.parameters, 'these are the paramters');
-      this.value = this.parameters.nativeHeight;
+      this.value = this.parameters.naturalHeight;
     }
   }
 
@@ -77,7 +76,14 @@ export class PictureComponent implements Stimuli, Responsive, OnInit, AfterViewC
   getScalingFactor() {
     // scale coordinates based on scaled image width relative to native image width
     // TODO check this is scaling coordinates for images; definitely works for movies with invisible picture overlay
-    const scalingFactor = this.parameters.width / this.parameters.nativeWidth;
+    console.log('parameters width', this.parameters.coordinates.width, this.parameters.coordinates.naturalWidth);
+    const width = this.parameters.width;
+    const nwidth = this.parameters.naturalWidth;
+    const height = this.parameters.height;
+    const nheight = this.parameters.naturalHeight;
+
+    const scalingFactor = width / nwidth;
+    console.log('factor ', scalingFactor);
     return scalingFactor;
   }
 }

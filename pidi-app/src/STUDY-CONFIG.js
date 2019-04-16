@@ -49,7 +49,8 @@ var animalTask = [
         parameters: {
           filename: '../../../assets/movie/animaltask1.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'left', shape: "rect", coordinates: "397, 297, 700, 500" },
+            { value: 'right', shape: "rect", coordinates: "815, 315, 1100, 495" },
           ]
         },
       }
@@ -64,7 +65,8 @@ var animalTask = [
         parameters: {
           filename: '../../../assets/movie/animaltask2.mp4', // type the location of the movie
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'left', shape: "rect", coordinates: "397, 297, 700, 500" },
+            { value: 'right', shape: "rect", coordinates: "815, 315, 1100, 495" },
           ]
         },
       }
@@ -79,7 +81,8 @@ var animalTask = [
         parameters: {
           filename: '../../../assets/movie/animaltask3.mp4', // movie
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'left', shape: "rect", coordinates: "397, 297, 700, 500" },
+            { value: 'right', shape: "rect", coordinates: "815, 315, 1100, 495" },
           ]
         }
       }
@@ -110,7 +113,8 @@ var intro_k = [
         parameters: {
           filename: '../../../assets/movie/introduction_k1.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'correct', shape: "rect", coordinates: "350, 260, 615, 800" },
+            { value: 'wrong', shape: "rect", coordinates: "960, 260, 1300, 800" },
           ]
         },
       }
@@ -125,7 +129,8 @@ var intro_k = [
         parameters: {
           filename: '../../../assets/movie/introduction_k2.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'wrong', shape: "rect", coordinates: "350, 260, 615, 800" },
+            { value: 'correct', shape: "rect", coordinates: "960, 260, 1300, 800" },
           ]
         },
       }
@@ -152,8 +157,8 @@ var intro_k = [
         parameters: {
           filename: '../../../assets/movie/manipulationcheck1.mp4',
           coordinates: [
-            { value: 'correct', shape: "rect", coordinates: "0, 0, 799, 5000" },
-            { value: 'wrong', shape: "rect", coordinates: "800, 0, 5000, 5000" },
+            { value: 'correct', shape: "rect", coordinates: "140, 540, 625, 825" },
+            { value: 'wrong', shape: "rect", coordinates: "1035, 540, 1520, 825" },
           ]
         },
       }
@@ -202,8 +207,8 @@ var intro_k = [
         parameters: {
           filename: '../../../assets/movie/manipulationcheck2.mp4',
           coordinates: [
-            { value: 'correct', shape: "rect", coordinates: "0, 0, 799, 5000" },
-            { value: 'wrong', shape: "rect", coordinates: "800, 0, 5000, 5000" },
+            { value: 'correct', shape: "rect", coordinates: "140, 540, 625, 825" },
+            { value: 'wrong', shape: "rect", coordinates: "1035, 540, 1520, 825" },
           ]
         },
       }
@@ -266,7 +271,8 @@ var intro_nk = [
         parameters: {
           filename: '../../../assets/movie/introduction_nk1.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'correct', shape: "rect", coordinates: "350, 260, 615, 800" },
+            { value: 'wrong', shape: "rect", coordinates: "960, 260, 1300, 800" },
           ]
         },
       }
@@ -281,7 +287,8 @@ var intro_nk = [
         parameters: {
           filename: '../../../assets/movie/introduction_nk2.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'wrong', shape: "rect", coordinates: "350, 260, 615, 800" },
+            { value: 'correct', shape: "rect", coordinates: "960, 260, 1300, 800" },
           ]
         },
       }
@@ -308,8 +315,8 @@ var intro_nk = [
         parameters: {
           filename: '../../../assets/movie/manipulationcheck1.mp4',
           coordinates: [
-            { value: 'wrong', shape: "rect", coordinates: "0, 0, 799, 5000" },
-            { value: 'correct', shape: "rect", coordinates: "800, 0, 5000, 5000" },
+            { value: 'wrong', shape: "rect", coordinates: "140, 540, 625, 825" },
+            { value: 'correct', shape: "rect", coordinates: "1035, 540, 1520, 825" },
           ]
         },
       }
@@ -358,8 +365,8 @@ var intro_nk = [
         parameters: {
           filename: '../../../assets/movie/manipulationcheck2.mp4',
           coordinates: [
-            { value: 'wrong', shape: "rect", coordinates: "0, 0, 799, 5000" },
-            { value: 'correct', shape: "rect", coordinates: "800, 0, 5000, 5000" },
+            { value: 'wrong', shape: "rect", coordinates: "140, 540, 625, 825" },
+            { value: 'correct', shape: "rect", coordinates: "1035, 540, 1520, 825" },
           ]
         },
       }
@@ -423,7 +430,8 @@ var pizza = [
         parameters: {
           filename: '../../../assets/movie/pizza_zarpie.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'yes', shape: "rect", coordinates: "85, 490, 390, 825" },
+            { value: 'no', shape: "rect", coordinates: "1235, 490, 1563, 825" },
           ]
         },
       }
@@ -438,7 +446,8 @@ var pizza = [
         parameters: {
           filename: '../../../assets/movie/pizza_gorp.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'yes', shape: "rect", coordinates: "85, 490, 390, 825" },
+            { value: 'no', shape: "rect", coordinates: "1235, 490, 1563, 825" },
           ]
         },
       }
@@ -464,6 +473,7 @@ var pizza_k = [
   },
   pizza
 ]
+
 var pizza_nk = [
   {
     type: 'action',
@@ -490,7 +500,8 @@ var piano = [
         parameters: {
           filename: '../../../assets/movie/piano_zarpie.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'yes', shape: "rect", coordinates: "85, 490, 390, 825" },
+            { value: 'no', shape: "rect", coordinates: "1235, 490, 1563, 825" },
           ]
         },
       }
@@ -505,7 +516,8 @@ var piano = [
         parameters: {
           filename: '../../../assets/movie/piano_gorp.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'yes', shape: "rect", coordinates: "85, 490, 390, 825" },
+            { value: 'no', shape: "rect", coordinates: "1235, 490, 1563, 825" },
           ]
         },
       }
@@ -557,7 +569,8 @@ var paint = [
         parameters: {
           filename: '../../../assets/movie/paint_zarpie.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'yes', shape: "rect", coordinates: "85, 490, 390, 825" },
+            { value: 'no', shape: "rect", coordinates: "1235, 490, 1563, 825" },
           ]
         },
       }
@@ -572,7 +585,8 @@ var paint = [
         parameters: {
           filename: '../../../assets/movie/paint_gorp.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'yes', shape: "rect", coordinates: "85, 490, 390, 825" },
+            { value: 'no', shape: "rect", coordinates: "1235, 490, 1563, 825" },
           ]
         },
       }
@@ -624,7 +638,8 @@ var photo = [
         parameters: {
           filename: '../../../assets/movie/photo_zarpie.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'yes', shape: "rect", coordinates: "85, 490, 390, 825" },
+            { value: 'no', shape: "rect", coordinates: "1235, 490, 1563, 825" },
           ]
         },
       }
@@ -639,7 +654,8 @@ var photo = [
         parameters: {
           filename: '../../../assets/movie/photo_gorp.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: 'yes', shape: "rect", coordinates: "85, 490, 390, 825" },
+            { value: 'no', shape: "rect", coordinates: "1235, 490, 1563, 825" },
           ]
         },
       }
@@ -721,7 +737,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics1.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
+            { value: '2', shape: "rect", coordinates: "650, 440, 960, 700"},
+            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700"},
           ]
         },
       }
@@ -736,7 +754,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics2.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
+            { value: '2', shape: "rect", coordinates: "720, 440, 900, 700"},
+            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700"},
           ]
         },
       }
@@ -751,7 +771,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics3.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
+            { value: '2', shape: "rect", coordinates: "720, 440, 900, 700"},
+            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700"},
           ]
         },
       }
@@ -766,7 +788,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics4.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
+            { value: '2', shape: "rect", coordinates: "750, 440, 860, 700"},
+            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700"},
           ]
         },
       }
@@ -781,7 +805,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics5.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
+            { value: '2', shape: "rect", coordinates: "700, 440, 960, 700"},
+            { value: '3', shape: "rect", coordinates: "1120, 440, 1325, 700"},
           ]
         },
       }
@@ -796,7 +822,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics6.mp4',
           coordinates: [
-            { value: 'dummy', shape: "rect", coordinates: "0, 0, 5000, 5000" },
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
+            { value: '2', shape: "rect", coordinates: "700, 440, 960, 700"},
+            { value: '3', shape: "rect", coordinates: "1120, 440, 1325, 700"},
           ]
         },
       }

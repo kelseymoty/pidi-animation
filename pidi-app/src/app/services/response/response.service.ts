@@ -151,7 +151,7 @@ export class ResponseService {
       console.log(output);
       const file = new Blob([output], { type: 'text/csv' });
       const stamp = new Date().toISOString();
-      FileSaver.saveAs(file, this.DBNAME + 'export-' + stamp + '.csv');
+      FileSaver.saveAs(file, 'pidi2' + 'export-' + stamp + '.csv');
     });
   }
 }

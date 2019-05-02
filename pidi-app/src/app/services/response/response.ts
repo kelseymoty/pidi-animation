@@ -33,6 +33,10 @@ export class Response {
   getCSVHeader() {
     const keys = Array.from(this.data.keys());
     let output = keys.reduce((accum, current, idx) => {
+      if (current === 'block') {
+        return accum;
+      }
+      
       if (idx === 1) {
         accum = accum + ',';
       }
@@ -48,16 +52,22 @@ export class Response {
   // returns csv formatted version of the object (excluding header)
   toCSV() {
     const keys = Array.from(this.data.keys());
+    const values = Array.from(this.data.values());
+
     const output = keys.reduce((accum, cur, idx) => {
       if (idx === 1) {
-        accum = this.data[accum].toString() + ',';
+        accum = values[idx].toString() + ',';
+      }
+
+      if (keys[idx] === 'block') {
+        return accum;
       }
 
       let temp = '';
-      if (this.data[cur] === Object(this.data[cur])) {
-        temp = JSON.stringify(this.data[cur]);
+      if (values[idx] === Object(values[idx])) {
+        temp = JSON.stringify(values[idx]);
       } else {
-        temp = this.data[cur].toString();
+        temp = values[idx].toString();
         if (temp.indexOf(',') !== -1) {
           temp = '"' + temp + '"';
         }

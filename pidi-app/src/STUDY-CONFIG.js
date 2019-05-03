@@ -150,7 +150,7 @@ var intro_k = [
   },
   {
     type: 'action',
-    id: 'manipulation_check1',
+    id: 'manipulation_check1k',
     stimuli: [
       {
         type: 'movie',
@@ -200,7 +200,7 @@ var intro_k = [
   },
   {
     type: 'action',
-    id: 'manipulation_check2',
+    id: 'manipulation_check2k',
     stimuli: [
       {
         type: 'movie',
@@ -308,7 +308,7 @@ var intro_nk = [
   },
   {
     type: 'action',
-    id: 'manipulation_check1',
+    id: 'manipulation_check1nk',
     stimuli: [
       {
         type: 'movie',
@@ -358,7 +358,7 @@ var intro_nk = [
   },
   {
     type: 'action',
-    id: 'manipulation_check2',
+    id: 'manipulation_check2nk',
     stimuli: [
       {
         type: 'movie',
@@ -737,9 +737,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics1.mp4',
           coordinates: [
-            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
-            { value: '2', shape: "rect", coordinates: "650, 440, 960, 700"},
-            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700"},
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700" },
+            { value: '2', shape: "rect", coordinates: "650, 440, 960, 700" },
+            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700" },
           ]
         },
       }
@@ -754,9 +754,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics2.mp4',
           coordinates: [
-            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
-            { value: '2', shape: "rect", coordinates: "720, 440, 900, 700"},
-            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700"},
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700" },
+            { value: '2', shape: "rect", coordinates: "720, 440, 900, 700" },
+            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700" },
           ]
         },
       }
@@ -771,9 +771,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics3.mp4',
           coordinates: [
-            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
-            { value: '2', shape: "rect", coordinates: "720, 440, 900, 700"},
-            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700"},
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700" },
+            { value: '2', shape: "rect", coordinates: "720, 440, 900, 700" },
+            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700" },
           ]
         },
       }
@@ -788,9 +788,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics4.mp4',
           coordinates: [
-            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
-            { value: '2', shape: "rect", coordinates: "750, 440, 860, 700"},
-            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700"},
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700" },
+            { value: '2', shape: "rect", coordinates: "750, 440, 860, 700" },
+            { value: '3', shape: "rect", coordinates: "1060, 440, 1325, 700" },
           ]
         },
       }
@@ -805,9 +805,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics5.mp4',
           coordinates: [
-            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
-            { value: '2', shape: "rect", coordinates: "700, 440, 960, 700"},
-            { value: '3', shape: "rect", coordinates: "1120, 440, 1325, 700"},
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700" },
+            { value: '2', shape: "rect", coordinates: "700, 440, 960, 700" },
+            { value: '3', shape: "rect", coordinates: "1120, 440, 1325, 700" },
           ]
         },
       }
@@ -822,9 +822,9 @@ var pragmatics = [
         parameters: {
           filename: '../../../assets/movie/pragmatics6.mp4',
           coordinates: [
-            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700"},
-            { value: '2', shape: "rect", coordinates: "700, 440, 960, 700"},
-            { value: '3', shape: "rect", coordinates: "1120, 440, 1325, 700"},
+            { value: '1', shape: "rect", coordinates: "300, 440, 540, 700" },
+            { value: '2', shape: "rect", coordinates: "700, 440, 960, 700" },
+            { value: '3', shape: "rect", coordinates: "1120, 440, 1325, 700" },
           ]
         },
       }
@@ -870,7 +870,7 @@ var end = [
 var knowledge_zarpie = [
   forms,
   startGame,
-  animalTask,
+  // animalTask,
   intro_k,
   [
     pizza_k,
@@ -928,7 +928,7 @@ var noknowledge_zarpie = [
 export const Project = {
   conditions: [ // list all of your conditions here. Participants are randomly assigned to one of them
     knowledge_zarpie,
-    noknowledge_zarpie,
+    // noknowledge_zarpie,
     // knowledge_gorp,
     // noknowledge_gorp
   ],

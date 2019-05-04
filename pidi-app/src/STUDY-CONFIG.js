@@ -870,7 +870,7 @@ var end = [
 var knowledge_zarpie = [
   forms,
   startGame,
-  // animalTask,
+  animalTask,
   intro_k,
   [
     pizza_k,
@@ -928,7 +928,7 @@ var noknowledge_zarpie = [
 export const Project = {
   conditions: [ // list all of your conditions here. Participants are randomly assigned to one of them
     knowledge_zarpie,
-    // noknowledge_zarpie,
+    noknowledge_zarpie,
     // knowledge_gorp,
     // noknowledge_gorp
   ],

@@ -919,6 +919,37 @@ var noknowledge_zarpie = [
   end
 ];
 
+var assignCondition = [
+  {
+    type: 'action',
+    id: 'assignCondition',
+    stimuli: [
+      {
+        type: 'picture',
+        parameters: {
+          filename: '../../../assets/picture/condition.png',
+          coordinates: [
+            { value: 'knowledge', shape: "rect", coordinates: "550, 425, 985, 885" },
+            { value: 'noknowldge', shape: "rect", coordinates: "1310, 425, 1740, 885" },
+          ],
+        }
+      }
+    ]
+  },
+  {
+    type: 'conditional',
+    id: 'assignCondition',
+    items: {
+      'knowledge': [
+        knowledge_zarpie,
+      ],
+      'noknowldge': [
+        noknowledge_zarpie
+      ],
+    }
+  },
+]
+
 
 ///////// The Study /////////
 // This is the study block
@@ -927,10 +958,7 @@ var noknowledge_zarpie = [
 
 export const Project = {
   conditions: [ // list all of your conditions here. Participants are randomly assigned to one of them
-    knowledge_zarpie,
-    noknowledge_zarpie,
-    // knowledge_gorp,
-    // noknowledge_gorp
+    assignCondition
   ],
   name: "PiDi2", // Put the name of your study here
   ended: { // this what happens when your study ends i.e., the last thing that happens before the study restarts

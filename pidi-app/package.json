@@ -39,7 +39,7 @@
     "codelyzer": "^4",
     "jasmine-core": "^3",
     "jasmine-spec-reporter": "^4",
-    "karma": "^3",
+    "karma": "^6",
     "karma-chrome-launcher": "^2",
     "karma-coverage-istanbul-reporter": "^2",
     "karma-jasmine": "^2",
